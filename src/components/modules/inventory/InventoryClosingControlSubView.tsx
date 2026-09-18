@@ -804,8 +804,8 @@ export const InventoryClosingControlSubView: React.FC = () => {
       {/* TAB 7: INVENTORY CERTIFICATION REPORT */}
       {activeTab === 'certification' && certification && (
         <div className="space-y-6">
-          <div className="p-6 bg-[#0B1F3A] text-white rounded-2xl border border-[#153258] shadow-sm space-y-6">
-            <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 border-b border-[#153258] pb-5">
+          <div className="p-6 bg-[#0B1D36] text-white rounded-2xl border border-[#16304F] shadow-sm space-y-6">
+            <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 border-b border-[#16304F] pb-5">
               <div>
                 <div className="flex items-center gap-2">
                   <Award className="w-6 h-6 text-indigo-300" />

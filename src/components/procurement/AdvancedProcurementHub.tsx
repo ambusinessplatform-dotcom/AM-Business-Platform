@@ -1063,7 +1063,7 @@ export const AdvancedProcurementHub: React.FC<AdvancedProcurementHubProps> = ({
       {/* ========================================================================= */}
       {subTab === 'HARDENING' && (
         <div className="space-y-6">
-          <div className="p-6 bg-[#0B1F3A] border border-[#153258] text-white rounded-2xl shadow-sm flex flex-col md:flex-row md:items-center justify-between gap-6">
+          <div className="p-6 bg-[#0B1D36] border border-[#16304F] text-white rounded-2xl shadow-sm flex flex-col md:flex-row md:items-center justify-between gap-6">
             <div className="space-y-2">
               <div className="flex items-center gap-2 text-[var(--brand-gold)] text-xs uppercase font-bold tracking-wider">
                 <ShieldCheck className="w-4 h-4" />

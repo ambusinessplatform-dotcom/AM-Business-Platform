@@ -213,9 +213,9 @@ export const CompanyModal: React.FC<CompanyModalProps> = ({
       <div className="w-full max-w-4xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-3xl shadow-2xl overflow-hidden my-8 animate-in fade-in zoom-in-95 duration-200">
         
         {/* Modal Header */}
-        <div className="px-6 py-5 bg-[#0B1F3A] text-white flex items-center justify-between border-b border-[#153258]">
+        <div className="px-6 py-5 bg-[#0B1D36] text-white flex items-center justify-between border-b border-[#16304F]">
           <div className="flex items-center gap-3">
-            <div className="p-2.5 rounded-2xl bg-[#153258] border border-brand-gold/40 text-brand-gold">
+            <div className="p-2.5 rounded-2xl bg-[#16304F] border border-brand-gold/40 text-brand-gold">
               <Building2 className="w-6 h-6" />
             </div>
             <div>

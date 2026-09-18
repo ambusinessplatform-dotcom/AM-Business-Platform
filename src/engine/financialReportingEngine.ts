@@ -95,9 +95,9 @@ export class FinancialReportingEngine {
         doc.on('data', chunk => chunks.push(Buffer.from(chunk)));
         doc.on('end', () => resolve(Buffer.concat(chunks).toString('base64')));
         doc.on('error', reject);
-        doc.fontSize(18).fillColor('#0B1F3A').text(customTitle);
+        doc.fontSize(18).fillColor('#0B1D36').text(customTitle);
         doc.moveDown(0.5).fontSize(9).fillColor('#475569').text(`Generated: ${base.generatedAt}`);
-        doc.moveDown().fontSize(10).fillColor('#0F172A');
+        doc.moveDown().fontSize(10).fillColor('#2B2B2B');
         for (const row of FinancialReportingEngine.flattenReport(reportData)) {
           doc.text(`${row.Field}: ${row.Value}`);
         }

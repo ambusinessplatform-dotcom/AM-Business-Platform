@@ -210,9 +210,9 @@ export const PosHardwareHub: React.FC<PosHardwareHubProps> = ({ isAr, onSendToCa
     <div className="space-y-6">
       {/* Action Notification Alert */}
       {actionNotice && (
-        <div className="p-3 rounded-xl bg-[#0B1F3A] text-white border border-[#C9A227] text-xs font-mono flex items-center justify-between shadow-md">
+        <div className="p-3 rounded-xl bg-[#0B1D36] text-white border border-[#CDAF7D] text-xs font-mono flex items-center justify-between shadow-md">
           <div className="flex items-center gap-2">
-            <Info className="w-4 h-4 text-[#C9A227] shrink-0" />
+            <Info className="w-4 h-4 text-[#CDAF7D] shrink-0" />
             <span>{actionNotice}</span>
           </div>
           <button onClick={() => setActionNotice(null)} className="text-slate-400 hover:text-white text-xs cursor-pointer">
@@ -225,14 +225,14 @@ export const PosHardwareHub: React.FC<PosHardwareHubProps> = ({ isAr, onSendToCa
       <div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-5 shadow-xs flex flex-col md:flex-row md:items-center justify-between gap-4">
         <div>
           <div className="flex items-center gap-2">
-            <span className="px-2.5 py-0.5 rounded-md bg-[#0B1F3A]/10 text-[#0B1F3A] dark:text-[#C9A227] font-mono text-[11px] font-bold border border-[#C9A227]/30">
+            <span className="px-2.5 py-0.5 rounded-md bg-[#0B1D36]/10 text-[#0B1D36] dark:text-[#CDAF7D] font-mono text-[11px] font-bold border border-[#CDAF7D]/30">
               PILOT READINESS 3B
             </span>
             <span className="text-slate-400 text-xs">•</span>
             <span className="text-xs text-slate-500 font-medium">Hardware Abstraction Layer (HAL) & EAN-13 Engine</span>
           </div>
           <h2 className="text-xl font-black text-slate-900 dark:text-white tracking-tight mt-1 flex items-center gap-2">
-            <Cpu className="w-6 h-6 text-[#C9A227]" />
+            <Cpu className="w-6 h-6 text-[#CDAF7D]" />
             <span>{isAr ? 'مركز إدارة العتاد والأجهزة الطرفية' : 'POS Peripherals & Hardware Abstraction Hub'}</span>
           </h2>
           <p className="text-xs text-slate-500 mt-0.5">
@@ -259,7 +259,7 @@ export const PosHardwareHub: React.FC<PosHardwareHubProps> = ({ isAr, onSendToCa
         <div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-4 shadow-xs space-y-3 flex flex-col justify-between">
           <div>
             <div className="flex justify-between items-start">
-              <div className="p-2 rounded-xl bg-[#0B1F3A]/5 text-[#0B1F3A] dark:text-[#C9A227] dark:bg-[#C9A227]/10">
+              <div className="p-2 rounded-xl bg-[#0B1D36]/5 text-[#0B1D36] dark:text-[#CDAF7D] dark:bg-[#CDAF7D]/10">
                 <Printer className="w-5 h-5" />
               </div>
               <span className={`px-2 py-0.5 rounded-full text-[10px] font-mono font-bold ${
@@ -280,9 +280,9 @@ export const PosHardwareHub: React.FC<PosHardwareHubProps> = ({ isAr, onSendToCa
           <div className="space-y-1.5 pt-2 border-t border-slate-100 dark:border-slate-800">
             <button
               onClick={handleTestPrint}
-              className="w-full py-1.5 rounded-xl bg-[#0B1F3A] hover:bg-[#153258] text-white font-bold text-xs flex items-center justify-center gap-1.5 cursor-pointer transition border border-[#C9A227]/30"
+              className="w-full py-1.5 rounded-xl bg-[#0B1D36] hover:bg-[#16304F] text-white font-bold text-xs flex items-center justify-center gap-1.5 cursor-pointer transition border border-[#CDAF7D]/30"
             >
-              <Printer className="w-3.5 h-3.5 text-[#C9A227]" />
+              <Printer className="w-3.5 h-3.5 text-[#CDAF7D]" />
               <span>Test 80mm Print</span>
             </button>
             <button
@@ -299,7 +299,7 @@ export const PosHardwareHub: React.FC<PosHardwareHubProps> = ({ isAr, onSendToCa
         <div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-4 shadow-xs space-y-3 flex flex-col justify-between">
           <div>
             <div className="flex justify-between items-start">
-              <div className="p-2 rounded-xl bg-[#0B1F3A]/5 text-[#0B1F3A] dark:text-[#C9A227] dark:bg-[#C9A227]/10">
+              <div className="p-2 rounded-xl bg-[#0B1D36]/5 text-[#0B1D36] dark:text-[#CDAF7D] dark:bg-[#CDAF7D]/10">
                 <DollarSign className="w-5 h-5" />
               </div>
               <span className={`px-2 py-0.5 rounded-full text-[10px] font-mono font-bold ${
@@ -335,7 +335,7 @@ export const PosHardwareHub: React.FC<PosHardwareHubProps> = ({ isAr, onSendToCa
         <div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-4 shadow-xs space-y-3 flex flex-col justify-between">
           <div>
             <div className="flex justify-between items-start">
-              <div className="p-2 rounded-xl bg-[#0B1F3A]/5 text-[#0B1F3A] dark:text-[#C9A227] dark:bg-[#C9A227]/10">
+              <div className="p-2 rounded-xl bg-[#0B1D36]/5 text-[#0B1D36] dark:text-[#CDAF7D] dark:bg-[#CDAF7D]/10">
                 <Barcode className="w-5 h-5" />
               </div>
               <span className="px-2 py-0.5 rounded-full text-[10px] font-mono font-bold bg-emerald-100 text-emerald-800 border border-emerald-300">
@@ -352,9 +352,9 @@ export const PosHardwareHub: React.FC<PosHardwareHubProps> = ({ isAr, onSendToCa
           <div className="space-y-1.5 pt-2 border-t border-slate-100 dark:border-slate-800">
             <button
               onClick={() => handleParseTestBarcode('2010203014506')}
-              className="w-full py-1.5 rounded-xl bg-[#0B1F3A] hover:bg-[#153258] text-white font-bold text-xs flex items-center justify-center gap-1.5 cursor-pointer transition border border-[#C9A227]/30"
+              className="w-full py-1.5 rounded-xl bg-[#0B1D36] hover:bg-[#16304F] text-white font-bold text-xs flex items-center justify-center gap-1.5 cursor-pointer transition border border-[#CDAF7D]/30"
             >
-              <Barcode className="w-3.5 h-3.5 text-[#C9A227]" />
+              <Barcode className="w-3.5 h-3.5 text-[#CDAF7D]" />
               <span>Test Burst Decode</span>
             </button>
             <div className="text-[10px] text-center text-emerald-600 font-mono font-bold">
@@ -367,7 +367,7 @@ export const PosHardwareHub: React.FC<PosHardwareHubProps> = ({ isAr, onSendToCa
         <div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-4 shadow-xs space-y-3 flex flex-col justify-between">
           <div>
             <div className="flex justify-between items-start">
-              <div className="p-2 rounded-xl bg-[#0B1F3A]/5 text-[#0B1F3A] dark:text-[#C9A227] dark:bg-[#C9A227]/10">
+              <div className="p-2 rounded-xl bg-[#0B1D36]/5 text-[#0B1D36] dark:text-[#CDAF7D] dark:bg-[#CDAF7D]/10">
                 <Scale className="w-5 h-5" />
               </div>
               <span className={`px-2 py-0.5 rounded-full text-[10px] font-mono font-bold ${
@@ -380,7 +380,7 @@ export const PosHardwareHub: React.FC<PosHardwareHubProps> = ({ isAr, onSendToCa
             </div>
             <h3 className="font-bold text-sm text-slate-900 dark:text-white mt-2">Counter Weighing Scale</h3>
             <div className="my-1.5 p-2 rounded-xl bg-slate-50 dark:bg-slate-800 text-center font-mono">
-              <span className="text-xl font-black text-[#0B1F3A] dark:text-[#C9A227]">{scaleReading.weight.toFixed(3)}</span>
+              <span className="text-xl font-black text-[#0B1D36] dark:text-[#CDAF7D]">{scaleReading.weight.toFixed(3)}</span>
               <span className="text-xs ml-1 text-slate-500 font-bold">{scaleReading.uom}</span>
               <div className="text-[9px] text-slate-400">Source: {scaleReading.source}</div>
             </div>
@@ -403,9 +403,9 @@ export const PosHardwareHub: React.FC<PosHardwareHubProps> = ({ isAr, onSendToCa
             </div>
             <button
               onClick={handleConnectSerialScale}
-              className="w-full py-1.5 rounded-xl bg-[#0B1F3A] hover:bg-[#153258] text-white font-bold text-xs flex items-center justify-center gap-1 cursor-pointer transition border border-[#C9A227]/30"
+              className="w-full py-1.5 rounded-xl bg-[#0B1D36] hover:bg-[#16304F] text-white font-bold text-xs flex items-center justify-center gap-1 cursor-pointer transition border border-[#CDAF7D]/30"
             >
-              <ExternalLink className="w-3 h-3 text-[#C9A227]" />
+              <ExternalLink className="w-3 h-3 text-[#CDAF7D]" />
               <span>Pair RS232 Serial</span>
             </button>
           </div>
@@ -417,7 +417,7 @@ export const PosHardwareHub: React.FC<PosHardwareHubProps> = ({ isAr, onSendToCa
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-slate-100 dark:border-slate-800 pb-3">
           <div>
             <h3 className="font-bold text-sm text-slate-900 dark:text-white flex items-center gap-2">
-              <Barcode className="w-4 h-4 text-[#C9A227]" />
+              <Barcode className="w-4 h-4 text-[#CDAF7D]" />
               <span>{isAr ? 'مختبر اختبار وتحليل الباركود المتغير (EAN-13 Parsing Simulator)' : 'Variable-Weight / Price EAN-13 Parser & Simulator'}</span>
             </h3>
             <p className="text-xs text-slate-500 mt-0.5">
@@ -432,7 +432,7 @@ export const PosHardwareHub: React.FC<PosHardwareHubProps> = ({ isAr, onSendToCa
                 setTestBarcode(code);
                 handleParseTestBarcode(code);
               }}
-              className="px-2.5 py-1.5 rounded-lg bg-[#0B1F3A]/5 hover:bg-[#0B1F3A]/10 text-[#0B1F3A] dark:text-[#C9A227] text-xs font-mono font-bold cursor-pointer"
+              className="px-2.5 py-1.5 rounded-lg bg-[#0B1D36]/5 hover:bg-[#0B1D36]/10 text-[#0B1D36] dark:text-[#CDAF7D] text-xs font-mono font-bold cursor-pointer"
             >
               Gen 20-Weight (1.450 KG)
             </button>
@@ -442,7 +442,7 @@ export const PosHardwareHub: React.FC<PosHardwareHubProps> = ({ isAr, onSendToCa
                 setTestBarcode(code);
                 handleParseTestBarcode(code);
               }}
-              className="px-2.5 py-1.5 rounded-lg bg-[#0B1F3A]/5 hover:bg-[#0B1F3A]/10 text-[#0B1F3A] dark:text-[#C9A227] text-xs font-mono font-bold cursor-pointer"
+              className="px-2.5 py-1.5 rounded-lg bg-[#0B1D36]/5 hover:bg-[#0B1D36]/10 text-[#0B1D36] dark:text-[#CDAF7D] text-xs font-mono font-bold cursor-pointer"
             >
               Gen 99-Weight (2.875 KG)
             </button>
@@ -461,7 +461,7 @@ export const PosHardwareHub: React.FC<PosHardwareHubProps> = ({ isAr, onSendToCa
               />
               <button
                 onClick={() => handleParseTestBarcode()}
-                className="px-4 py-2 rounded-xl bg-[#0B1F3A] hover:bg-[#153258] text-white font-bold text-xs cursor-pointer border border-[#C9A227]/30"
+                className="px-4 py-2 rounded-xl bg-[#0B1D36] hover:bg-[#16304F] text-white font-bold text-xs cursor-pointer border border-[#CDAF7D]/30"
               >
                 Decode
               </button>
@@ -539,7 +539,7 @@ export const PosHardwareHub: React.FC<PosHardwareHubProps> = ({ isAr, onSendToCa
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-slate-100 dark:border-slate-800 pb-3">
           <div>
             <h3 className="font-bold text-sm text-slate-900 dark:text-white flex items-center gap-2">
-              <Sliders className="w-4 h-4 text-[#C9A227]" />
+              <Sliders className="w-4 h-4 text-[#CDAF7D]" />
               <span>{isAr ? 'ملفات تعريف وقواعد الباركود المتغير (Barcode Profiles)' : 'Configured EAN-13 Barcode Profiles'}</span>
             </h3>
             <p className="text-xs text-slate-500 mt-0.5">
@@ -550,9 +550,9 @@ export const PosHardwareHub: React.FC<PosHardwareHubProps> = ({ isAr, onSendToCa
           <div className="flex items-center gap-2">
             <button
               onClick={() => setIsAddingProfile(!isAddingProfile)}
-              className="px-3 py-1.5 rounded-xl bg-[#0B1F3A] hover:bg-[#153258] text-white font-bold text-xs flex items-center gap-1.5 cursor-pointer border border-[#C9A227]/30"
+              className="px-3 py-1.5 rounded-xl bg-[#0B1D36] hover:bg-[#16304F] text-white font-bold text-xs flex items-center gap-1.5 cursor-pointer border border-[#CDAF7D]/30"
             >
-              <Plus className="w-3.5 h-3.5 text-[#C9A227]" />
+              <Plus className="w-3.5 h-3.5 text-[#CDAF7D]" />
               <span>Add Custom Profile</span>
             </button>
             <button
@@ -636,7 +636,7 @@ export const PosHardwareHub: React.FC<PosHardwareHubProps> = ({ isAr, onSendToCa
               </button>
               <button
                 type="submit"
-                className="px-4 py-1.5 rounded-lg bg-[#0B1F3A] text-white font-bold text-xs cursor-pointer border border-[#C9A227]"
+                className="px-4 py-1.5 rounded-lg bg-[#0B1D36] text-white font-bold text-xs cursor-pointer border border-[#CDAF7D]"
               >
                 Save Profile
               </button>

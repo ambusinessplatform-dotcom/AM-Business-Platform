@@ -324,11 +324,11 @@ export const GeneralLedgerManagementView: React.FC = () => {
     <div className="p-6 bg-slate-50 min-h-screen space-y-6">
       
       {/* Top Banner Header */}
-      <div className="bg-[#0B1F3A] border border-[#153258] rounded-2xl p-6 text-white shadow-sm flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
+      <div className="bg-[#0B1D36] border border-[#16304F] rounded-2xl p-6 text-white shadow-sm flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
         <div>
           <div className="flex items-center gap-3">
-            <div className="p-2.5 bg-[#153258] border border-[#C9A227]/40 rounded-xl">
-              <BookOpen className="w-6 h-6 text-[#C9A227]" />
+            <div className="p-2.5 bg-[#16304F] border border-[#CDAF7D]/40 rounded-xl">
+              <BookOpen className="w-6 h-6 text-[#CDAF7D]" />
             </div>
             <div>
               <h1 className="text-2xl font-bold tracking-tight">General Ledger & Financial Closing</h1>

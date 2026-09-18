@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" role="img" aria-labelledby="title">
   <title id="title">AM</title>
-  <rect width="96" height="96" rx="16" fill="#0B1F3A"/>
-  <path d="M17 70 35 26h12l18 44H52l-4-10H34l-4 10H17Zm21-23h6l-3-8-3 8Zm29 23V26h12v44H67Z" fill="#C9A227"/>
+  <rect width="96" height="96" rx="16" fill="#0B1D36"/>
+  <path d="M17 70 35 26h12l18 44H52l-4-10H34l-4 10H17Zm21-23h6l-3-8-3 8Zm29 23V26h12v44H67Z" fill="#CDAF7D"/>
 </svg>

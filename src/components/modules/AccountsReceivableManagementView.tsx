@@ -869,7 +869,7 @@ export const AccountsReceivableManagementView: React.FC = () => {
               <Search className="w-4 h-4 absolute right-3 top-2.5 text-slate-400" />
               <input type="search" placeholder="رقم الفاتورة أو العميل أو أمر البيع"
                 value={searchTerm} onChange={e => { setSearchTerm(e.target.value); setInvoicePage(1); }}
-                className="w-full bg-white text-sm pr-9 pl-3 py-2 rounded-md border border-slate-300 focus:outline-none focus:border-[#C9A227]" />
+                className="w-full bg-white text-sm pr-9 pl-3 py-2 rounded-md border border-slate-300 focus:outline-none focus:border-[#CDAF7D]" />
             </label>
             <select value={statusFilter} onChange={e => { setStatusFilter(e.target.value); setInvoicePage(1); }}
               className="bg-white text-sm px-3 py-2 rounded-md border border-slate-300">
@@ -927,7 +927,7 @@ export const AccountsReceivableManagementView: React.FC = () => {
                       'bg-slate-100 text-slate-700 border-slate-200'
                     }`}>{invoice.paymentStatus === 'PAID' ? 'مدفوعة' : invoice.paymentStatus === 'PARTIALLY_PAID' ? 'مدفوعة جزئيًا' : invoice.paymentStatus === 'OVERDUE' ? 'متأخرة' : 'غير مدفوعة'}</span></td>
                     <td className="p-3">
-                      <button onClick={() => handleOpenInvoice(invoice)} className="inline-flex items-center gap-1 text-[#0B1D36] hover:text-[#C9A227] font-semibold">
+                      <button onClick={() => handleOpenInvoice(invoice)} className="inline-flex items-center gap-1 text-[#0B1D36] hover:text-[#CDAF7D] font-semibold">
                         <Eye className="w-4 h-4" /> عرض
                       </button>
                     </td>
@@ -1524,7 +1524,7 @@ export const AccountsReceivableManagementView: React.FC = () => {
                 <div className="flex flex-wrap items-center gap-2">
                   <span className="px-2.5 py-1 rounded-md bg-emerald-50 text-emerald-700 border border-emerald-200 text-xs font-semibold">{selectedInvoice.status === 'POSTED' ? 'منشورة' : selectedInvoice.status}</span>
                   <button onClick={() => handleReceiveForInvoice(selectedInvoice)} disabled={selectedInvoice.remainingAmount <= 0} className="px-3 py-2 bg-[#0B1D36] text-white rounded-md text-xs font-semibold disabled:opacity-40">استلام دفعة</button>
-                  <button onClick={() => handleCreditNoteForInvoice(selectedInvoice)} disabled={selectedInvoice.remainingAmount <= 0} className="px-3 py-2 border border-[#C9A227] text-[#0B1D36] rounded-md text-xs font-semibold disabled:opacity-40">إصدار إشعار دائن</button>
+                  <button onClick={() => handleCreditNoteForInvoice(selectedInvoice)} disabled={selectedInvoice.remainingAmount <= 0} className="px-3 py-2 border border-[#CDAF7D] text-[#0B1D36] rounded-md text-xs font-semibold disabled:opacity-40">إصدار إشعار دائن</button>
                   <button onClick={() => handlePrintInvoice(selectedInvoice)} className="inline-flex items-center gap-1 px-3 py-2 border border-slate-300 rounded-md text-xs font-semibold"><Printer className="w-4 h-4" /> طباعة</button>
                 </div>
                 <div className="grid grid-cols-2 md:grid-cols-5 gap-3">
@@ -1686,7 +1686,7 @@ export const AccountsReceivableManagementView: React.FC = () => {
               <div className="border border-slate-200 rounded-md overflow-hidden">
                 <div className="flex items-center justify-between bg-[#0B1D36] text-white px-3 py-2">
                   <span className="font-semibold">بنود الفاتورة</span>
-                  <button type="button" onClick={() => setInvoiceLines(lines => [...lines, { itemCode: '', itemName: '', quantity: 1, unitPrice: 0, discountRate: 0 }])} className="inline-flex items-center gap-1 text-xs text-[#C9A227]">
+                  <button type="button" onClick={() => setInvoiceLines(lines => [...lines, { itemCode: '', itemName: '', quantity: 1, unitPrice: 0, discountRate: 0 }])} className="inline-flex items-center gap-1 text-xs text-[#CDAF7D]">
                     <Plus className="w-3.5 h-3.5" /> إضافة بند
                   </button>
                 </div>

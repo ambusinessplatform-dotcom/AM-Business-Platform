@@ -521,7 +521,7 @@ export const PlatformIntegrationView: React.FC = () => {
       {activeTab === 'pilotReadiness' && pilotReadiness && (
         <div className="space-y-6">
           {/* Top Certification Score Card */}
-          <div className="p-6 bg-[#0B1F3A] text-white rounded-2xl border border-[#153258] shadow-sm space-y-4">
+          <div className="p-6 bg-[#0B1D36] text-white rounded-2xl border border-[#16304F] shadow-sm space-y-4">
             <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
               <div className="space-y-1">
                 <div className="flex items-center gap-2">

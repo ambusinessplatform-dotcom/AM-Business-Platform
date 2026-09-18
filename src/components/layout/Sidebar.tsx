@@ -93,7 +93,7 @@ export const Sidebar: React.FC = () => {
 
   const navCategories: NavCategory[] = [
     { titleEn: 'Workspace', titleAr: 'المساحة', items: visibleFeatures.filter(feature => feature.navigationGroup === 'Workspace').map(feature => ({ id: feature.module as ModuleView, labelEn: feature.displayName.en, labelAr: feature.displayName.ar, icon: iconMap[feature.module] || iconMap.default })) },
-    { titleEn: 'Sales', titleAr: 'المبيعات', items: visibleFeatures.filter(feature => feature.navigationGroup === 'Sales').map(feature => ({ id: feature.module as ModuleView, labelEn: feature.displayName.en, labelAr: feature.displayName.ar, icon: iconMap[feature.module] || iconMap.default, badge: feature.module === 'pos' ? 'POS' : undefined, badgeColor: feature.module === 'pos' ? 'bg-[#C9A227] text-slate-950 font-bold' : undefined })) },
+    { titleEn: 'Sales', titleAr: 'المبيعات', items: visibleFeatures.filter(feature => feature.navigationGroup === 'Sales').map(feature => ({ id: feature.module as ModuleView, labelEn: feature.displayName.en, labelAr: feature.displayName.ar, icon: iconMap[feature.module] || iconMap.default, badge: feature.module === 'pos' ? 'POS' : undefined, badgeColor: feature.module === 'pos' ? 'bg-[#CDAF7D] text-slate-950 font-bold' : undefined })) },
     { titleEn: 'Purchases', titleAr: 'المشتريات', items: visibleFeatures.filter(feature => feature.navigationGroup === 'Purchases').map(feature => ({ id: feature.module as ModuleView, labelEn: feature.displayName.en, labelAr: feature.displayName.ar, icon: iconMap[feature.module] || iconMap.default })) },
     { titleEn: 'Inventory', titleAr: 'المخزون', items: visibleFeatures.filter(feature => feature.navigationGroup === 'Inventory').map(feature => ({ id: feature.module as ModuleView, labelEn: feature.displayName.en, labelAr: feature.displayName.ar, icon: iconMap[feature.module] || iconMap.default })) },
     { titleEn: 'Finance', titleAr: 'المالية', items: visibleFeatures.filter(feature => feature.navigationGroup === 'Finance').map(feature => ({ id: feature.module as ModuleView, labelEn: feature.displayName.en, labelAr: feature.displayName.ar, icon: iconMap[feature.module] || iconMap.default })) },
@@ -129,21 +129,21 @@ export const Sidebar: React.FC = () => {
                         type="button"
                         onClick={() => setActiveModule(item.id)}
                         style={isActive ? {
-                          backgroundColor: branding?.primaryColor || '#0B1F3A',
-                          borderColor: `${branding?.accentColor || '#C9A227'}4D`
+                          backgroundColor: branding?.primaryColor || '#0B1D36',
+                          borderColor: `${branding?.accentColor || '#CDAF7D'}4D`
                         } : {}}
                         className={`w-full min-h-[38px] flex items-center justify-between rounded-md px-3 py-2 text-xs font-medium transition cursor-pointer ${
                           isActive ? 'text-white font-bold border' : 'text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800/80'
                         }`}
                       >
                         <div className="flex items-center gap-2.5 truncate min-w-0">
-                          <Icon className="w-4 h-4 shrink-0" style={isActive ? { color: branding?.accentColor || '#C9A227' } : {}} />
+                          <Icon className="w-4 h-4 shrink-0" style={isActive ? { color: branding?.accentColor || '#CDAF7D' } : {}} />
                           <span className="truncate text-xs font-semibold">{isAr ? item.labelAr : item.labelEn}</span>
                         </div>
                         <div className="flex items-center gap-1.5 shrink-0">
                           {item.badge ? (
-                            <span className={`px-1.5 py-0.5 rounded-full text-[10px] font-bold ${item.badgeColor || 'text-white'}`} style={!item.badgeColor ? { backgroundColor: branding?.accentColor || '#C9A227' } : {}}>{item.badge}</span>
-                          ) : isActive ? <ChevronRight className="w-3.5 h-3.5 rtl:rotate-180" style={{ color: branding?.accentColor || '#C9A227' }} /> : null}
+                            <span className={`px-1.5 py-0.5 rounded-full text-[10px] font-bold ${item.badgeColor || 'text-white'}`} style={!item.badgeColor ? { backgroundColor: branding?.accentColor || '#CDAF7D' } : {}}>{item.badge}</span>
+                          ) : isActive ? <ChevronRight className="w-3.5 h-3.5 rtl:rotate-180" style={{ color: branding?.accentColor || '#CDAF7D' }} /> : null}
                         </div>
                       </button>
                     );
@@ -159,12 +159,13 @@ export const Sidebar: React.FC = () => {
         <div className="rounded-xl bg-slate-50 dark:bg-slate-800/60 p-3 border border-slate-200 dark:border-slate-800 text-xs space-y-1.5">
           <div className="flex items-center justify-between text-slate-900 dark:text-white font-semibold">
             <span className="flex items-center gap-1.5">
-              <Sparkles className="w-3.5 h-3.5" style={{ color: branding?.accentColor || '#C9A227' }} />
-              <span className="font-bold truncate max-w-[140px]">{isAr ? (branding?.appNameAr || branding?.appName || 'منصة إيه إم للأعمال') : (branding?.appName || 'AM Business OS')}</span>
+              <Sparkles className="w-3.5 h-3.5" style={{ color: branding?.accentColor || '#CDAF7D' }} />
+              <span className="font-bold truncate max-w-[140px]">{isAr ? (branding?.appNameAr || branding?.appName || 'نظام إيه إم لإدارة الأعمال') : (branding?.appName || 'AM Business OS')}</span>
             </span>
-            <span className="text-[10px] font-mono font-bold px-1.5 py-0.5 rounded-md border" style={{ color: branding?.accentColor || '#C9A227', backgroundColor: `${branding?.accentColor || '#C9A227'}1A`, borderColor: `${branding?.accentColor || '#C9A227'}33` }}>v2.8.0</span>
+            <span className="text-[10px] font-mono font-bold px-1.5 py-0.5 rounded-md border" style={{ color: branding?.accentColor || '#CDAF7D', backgroundColor: `${branding?.accentColor || '#CDAF7D'}1A`, borderColor: `${branding?.accentColor || '#CDAF7D'}33` }}>v2.8.0</span>
           </div>
-          <p className="text-[10px] text-slate-500 dark:text-slate-400 leading-normal">{branding?.tradingName || (isAr ? 'إدارة متكاملة للأعمال والعمليات المالية' : 'Integrated business and financial operations')}</p>
+          <p className="text-[10px] text-slate-500 dark:text-slate-400 leading-normal">{branding?.tradingName || (isAr ? 'منصة متكاملة لتخطيط موارد المؤسسات وإدارة الأعمال' : 'Integrated ERP & business management')}</p>
+          {branding?.showPoweredBy !== false && <p className="text-[10px] text-slate-400 dark:text-slate-500">Powered by AM CONSULTANT</p>}
         </div>
       </div>
     </aside>

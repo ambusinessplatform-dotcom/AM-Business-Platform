@@ -2,15 +2,15 @@
 
 @layer base {
   :root {
-    --brand-navy: #0B1F3A;
-    --brand-navy-light: #16325B;
-    --brand-navy-dark: #061224;
-    --brand-gold: #C9A227;
-    --brand-gold-muted: #B38E1F;
-    --bg-light: #F8FAFC;
+    --brand-navy: #0B1D36;
+    --brand-navy-light: #16304F;
+    --brand-navy-dark: #061326;
+    --brand-gold: #CDAF7D;
+    --brand-gold-muted: #A98A5E;
+    --bg-light: #F2F4F7;
     --bg-surface: #FFFFFF;
-    --border-light: #E2E8F0;
-    --text-primary: #0F172A;
+    --border-light: #E1E5EA;
+    --text-primary: #2B2B2B;
     --text-muted: #64748B;
     --state-success: #059669;
     --state-warning: #D97706;
@@ -27,7 +27,7 @@
   body {
     font-family: 'Plus Jakarta Sans', 'Cairo', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
     background-color: var(--bg-light);
-    color: #0F172A;
+    color: var(--text-primary);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
@@ -37,7 +37,7 @@
   }
 
   .dark body {
-    color: #F8FAFC;
+    color: #F2F4F7;
   }
 }
 
@@ -71,11 +71,7 @@
 }
 
 .text-brand-gold {
-  color: var(--brand-gold-muted);
-}
-
-.text-brand-gold {
-  color: var(--brand-gold);
+color: var(--brand-gold);
 }
 
 .border-brand-gold {
@@ -108,15 +104,15 @@
 }
 
 .badge-am-accent {
-  background-color: rgb(201 162 39 / 0.14);
+  background-color: rgb(205 175 125 / 0.14);
   color: var(--brand-gold-muted);
-  border: 1px solid rgb(201 162 39 / 0.35);
+  border: 1px solid rgb(205 175 125 / 0.35);
 }
 
 .dark .badge-am-accent {
-  background-color: rgb(201 162 39 / 0.2);
+  background-color: rgb(205 175 125 / 0.2);
   color: var(--brand-gold);
-  border: 1px solid rgb(201 162 39 / 0.4);
+  border: 1px solid rgb(205 175 125 / 0.4);
 }
 
 .card-am-surface {

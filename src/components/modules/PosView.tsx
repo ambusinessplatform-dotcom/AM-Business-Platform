@@ -1000,14 +1000,14 @@ export const PosView: React.FC = () => {
       <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-slate-200 dark:border-slate-800 pb-5">
         <div>
           <div className="flex items-center gap-2">
-            <span className="px-2.5 py-0.5 rounded-md bg-[#0B1F3A]/10 text-[#0B1F3A] dark:text-[#C9A227] dark:bg-[#C9A227]/10 font-mono text-[11px] font-bold border border-[#C9A227]/30">
+            <span className="px-2.5 py-0.5 rounded-md bg-[#0B1D36]/10 text-[#0B1D36] dark:text-[#CDAF7D] dark:bg-[#CDAF7D]/10 font-mono text-[11px] font-bold border border-[#CDAF7D]/30">
               PHASE 3.1 RETAIL POINT OF SALE
             </span>
             <span className="text-slate-400 text-xs">•</span>
             <span className="text-xs text-slate-500 font-medium">ZATCA E-Invoicing & Treasury Event Integration</span>
           </div>
           <h1 className="text-2xl font-black text-slate-900 dark:text-white tracking-tight mt-1 flex items-center gap-2.5">
-            <Store className="w-7 h-7 text-[#C9A227]" />
+            <Store className="w-7 h-7 text-[#CDAF7D]" />
             <span>{isAr ? 'محطة نقاط البيع والتجزئة الذكية' : 'Intelligent Retail POS Station'}</span>
           </h1>
         </div>
@@ -1019,7 +1019,7 @@ export const PosView: React.FC = () => {
             className="px-3.5 py-2 rounded-xl bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-200 font-bold text-xs flex items-center gap-1.5 shadow-xs cursor-pointer border border-slate-300 dark:border-slate-700 transition"
             title="Open Customer-Facing Display on Secondary Monitor"
           >
-            <Monitor className="w-4 h-4 text-[#C9A227]" />
+            <Monitor className="w-4 h-4 text-[#CDAF7D]" />
             <span>{isAr ? 'شاشة العميل (نافذة ثانية)' : 'Customer Screen'}</span>
             <ExternalLink className="w-3.5 h-3.5 text-slate-400" />
           </button>
@@ -1029,7 +1029,7 @@ export const PosView: React.FC = () => {
             onClick={() => setIsOfflineMode(!isOfflineMode)}
             className={`flex items-center gap-2 px-3 py-1.5 rounded-xl text-xs font-bold font-mono transition border cursor-pointer ${
               isOfflineMode
-                ? 'bg-[#C9A227] text-white border-[#B38E1F] shadow-xs'
+                ? 'bg-[#CDAF7D] text-white border-[#A98A5E] shadow-xs'
                 : 'bg-emerald-50 dark:bg-emerald-950 text-emerald-700 dark:text-emerald-300 border-emerald-500/20 hover:bg-emerald-100'
             }`}
             title={isOfflineMode ? 'Operating Offline via IndexedDB' : 'Connected to Server'}
@@ -1042,7 +1042,7 @@ export const PosView: React.FC = () => {
           {offlineSummary.pendingCount > 0 && (
             <button
               onClick={() => setActiveTab('offlineSync')}
-              className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-[#C9A227] text-white text-xs font-bold font-mono shadow-xs animate-pulse cursor-pointer hover:bg-[#B38E1F]"
+              className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-[#CDAF7D] text-white text-xs font-bold font-mono shadow-xs animate-pulse cursor-pointer hover:bg-[#A98A5E]"
             >
               <RefreshCw className="w-3.5 h-3.5" />
               <span>{isAr ? `في الانتظار: ${offlineSummary.pendingCount}` : `Sync Queue: ${offlineSummary.pendingCount}`}</span>
@@ -1056,17 +1056,17 @@ export const PosView: React.FC = () => {
           {activeShift ? (
             <button
               onClick={() => setIsShiftCloseModalOpen(true)}
-              className="px-4 py-2 rounded-xl bg-[#0B1F3A] hover:bg-[#153258] text-white font-bold text-xs flex items-center gap-2 shadow-xs cursor-pointer border border-[#C9A227]/40"
+              className="px-4 py-2 rounded-xl bg-[#0B1D36] hover:bg-[#16304F] text-white font-bold text-xs flex items-center gap-2 shadow-xs cursor-pointer border border-[#CDAF7D]/40"
             >
-              <Lock className="w-4 h-4 text-[#C9A227]" />
+              <Lock className="w-4 h-4 text-[#CDAF7D]" />
               <span>{isAr ? 'إغلاق الوردية والتقرير Z' : 'Close Shift & Z-Report'}</span>
             </button>
           ) : (
             <button
               onClick={handleOpenShift}
-              className="px-4 py-2 rounded-xl bg-[#0B1F3A] hover:bg-[#153258] text-white font-bold text-xs flex items-center gap-2 shadow-xs cursor-pointer border border-[#153258]"
+              className="px-4 py-2 rounded-xl bg-[#0B1D36] hover:bg-[#16304F] text-white font-bold text-xs flex items-center gap-2 shadow-xs cursor-pointer border border-[#16304F]"
             >
-              <Plus className="w-4 h-4 text-[#C9A227]" />
+              <Plus className="w-4 h-4 text-[#CDAF7D]" />
               <span>{isAr ? 'فتح وردية جديدة' : 'Open Shift Session'}</span>
             </button>
           )}
@@ -1093,14 +1093,14 @@ export const PosView: React.FC = () => {
               onClick={() => setActiveTab(tab.id as any)}
               className={`px-4 py-2 rounded-xl text-xs font-bold transition flex items-center gap-2 cursor-pointer ${
                 isActive
-                  ? 'bg-[#0B1F3A] text-white shadow-xs border border-[#153258]'
+                  ? 'bg-[#0B1D36] text-white shadow-xs border border-[#16304F]'
                   : 'bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700'
               }`}
             >
-              <Icon className={`w-4 h-4 ${isActive ? 'text-[#C9A227]' : ''}`} />
+              <Icon className={`w-4 h-4 ${isActive ? 'text-[#CDAF7D]' : ''}`} />
               <span>{isAr ? tab.labelAr : tab.labelEn}</span>
               {tab.count !== undefined && (
-                <span className={`px-1.5 py-0.5 rounded-full text-[10px] font-mono ${isActive ? 'bg-[#C9A227] text-slate-950 font-bold' : 'bg-slate-200 dark:bg-slate-700'}`}>
+                <span className={`px-1.5 py-0.5 rounded-full text-[10px] font-mono ${isActive ? 'bg-[#CDAF7D] text-slate-950 font-bold' : 'bg-slate-200 dark:bg-slate-700'}`}>
                   {tab.count}
                 </span>
               )}
@@ -1111,9 +1111,9 @@ export const PosView: React.FC = () => {
 
       {/* Hardware Notification / Scan Alert */}
       {hardwareAlert && (
-        <div className="p-3 rounded-xl bg-[#0B1F3A] text-white border border-[#C9A227] text-xs font-mono flex items-center justify-between shadow-md">
+        <div className="p-3 rounded-xl bg-[#0B1D36] text-white border border-[#CDAF7D] text-xs font-mono flex items-center justify-between shadow-md">
           <div className="flex items-center gap-2">
-            <Zap className="w-4 h-4 text-[#C9A227] shrink-0" />
+            <Zap className="w-4 h-4 text-[#CDAF7D] shrink-0" />
             <span>{hardwareAlert}</span>
           </div>
           <button onClick={() => setHardwareAlert(null)} className="text-slate-400 hover:text-white text-xs cursor-pointer">
@@ -1129,13 +1129,13 @@ export const PosView: React.FC = () => {
           <div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-3 shadow-xs flex flex-wrap items-center justify-between gap-3 text-xs">
             <div className="flex flex-wrap items-center gap-2">
               <span className="text-[11px] font-bold text-slate-500 flex items-center gap-1 font-mono uppercase">
-                <Cpu className="w-3.5 h-3.5 text-[#C9A227]" />
+                <Cpu className="w-3.5 h-3.5 text-[#CDAF7D]" />
                 <span>HAL Peripherals:</span>
               </span>
 
               {/* 80mm Printer */}
               <div className="px-2.5 py-1 rounded-lg bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 flex items-center gap-1.5 font-mono text-[11px]">
-                <Printer className="w-3.5 h-3.5 text-[#0B1F3A] dark:text-[#C9A227]" />
+                <Printer className="w-3.5 h-3.5 text-[#0B1D36] dark:text-[#CDAF7D]" />
                 <span className="font-bold">80mm:</span>
                 <span className={hwHealth.devices.printer.status === 'CONNECTED' ? 'text-emerald-600 font-bold' : 'text-amber-600'}>
                   {hwHealth.devices.printer.status === 'CONNECTED' ? 'Direct USB' : 'Browser 80mm'}
@@ -1170,7 +1170,7 @@ export const PosView: React.FC = () => {
 
             <button
               onClick={() => setActiveTab('hardware')}
-              className="px-3 py-1 rounded-lg bg-[#0B1F3A]/5 hover:bg-[#0B1F3A]/10 text-[#0B1F3A] dark:text-[#C9A227] font-bold text-xs flex items-center gap-1 cursor-pointer"
+              className="px-3 py-1 rounded-lg bg-[#0B1D36]/5 hover:bg-[#0B1D36]/10 text-[#0B1D36] dark:text-[#CDAF7D] font-bold text-xs flex items-center gap-1 cursor-pointer"
             >
               <Sliders className="w-3.5 h-3.5" />
               <span>Configure Peripherals</span>
@@ -1184,7 +1184,7 @@ export const PosView: React.FC = () => {
               <div className="space-y-2">
                 <div className="flex items-center gap-2">
                   <div className="relative flex-1">
-                    <Barcode className="w-4 h-4 text-[#C9A227] absolute left-3 top-3" />
+                    <Barcode className="w-4 h-4 text-[#CDAF7D] absolute left-3 top-3" />
                     <input 
                       type="text" 
                       value={searchQuery}
@@ -1208,9 +1208,9 @@ export const PosView: React.FC = () => {
                         handleScanBarcode('628100100201');
                       }
                     }}
-                    className="px-3 py-2.5 rounded-xl bg-[#0B1F3A] text-white hover:bg-[#153258] border border-[#C9A227]/40 font-bold text-xs flex items-center gap-1.5 cursor-pointer shadow-xs"
+                    className="px-3 py-2.5 rounded-xl bg-[#0B1D36] text-white hover:bg-[#16304F] border border-[#CDAF7D]/40 font-bold text-xs flex items-center gap-1.5 cursor-pointer shadow-xs"
                   >
-                    <Barcode className="w-4 h-4 text-[#C9A227]" />
+                    <Barcode className="w-4 h-4 text-[#CDAF7D]" />
                     <span>Scan/Enter</span>
                   </button>
                 </div>
@@ -1248,7 +1248,7 @@ export const PosView: React.FC = () => {
                           onClick={() => setSelectedCategory(cat)}
                           className={`px-2.5 py-1 rounded-lg text-xs font-medium cursor-pointer transition ${
                             selectedCategory === cat
-                              ? 'bg-[#0B1F3A] text-white font-bold'
+                              ? 'bg-[#0B1D36] text-white font-bold'
                               : 'bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700'
                           }`}
                         >
@@ -1294,20 +1294,20 @@ export const PosView: React.FC = () => {
                   <div 
                     key={p.sku}
                     onClick={() => addToCart(p)}
-                    className="p-4 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 hover:border-[#C9A227] cursor-pointer transition shadow-xs space-y-2 group"
+                    className="p-4 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 hover:border-[#CDAF7D] cursor-pointer transition shadow-xs space-y-2 group"
                   >
                     <div className="flex justify-between items-center text-[10px] font-mono text-slate-400">
                       <span>{p.sku}</span>
                       <span className="px-1.5 py-0.5 rounded bg-slate-100 dark:bg-slate-800">{p.category}</span>
                     </div>
-                    <div className="font-bold text-xs text-slate-900 dark:text-white group-hover:text-[#C9A227] min-h-8">
+                    <div className="font-bold text-xs text-slate-900 dark:text-white group-hover:text-[#CDAF7D] min-h-8">
                       {isAr ? p.nameAr : p.name}
                     </div>
                     <div className="flex items-center justify-between pt-1 border-t border-slate-100 dark:border-slate-800">
-                      <span className="font-mono font-black text-sm text-[#0B1F3A] dark:text-[#C9A227]">
+                      <span className="font-mono font-black text-sm text-[#0B1D36] dark:text-[#CDAF7D]">
                         {p.price.toLocaleString()} SAR
                       </span>
-                      <span className="p-1 rounded-lg bg-[#0B1F3A]/10 dark:bg-[#C9A227]/20 text-[#0B1F3A] dark:text-[#C9A227] text-xs">
+                      <span className="p-1 rounded-lg bg-[#0B1D36]/10 dark:bg-[#CDAF7D]/20 text-[#0B1D36] dark:text-[#CDAF7D] text-xs">
                         <Plus className="w-3.5 h-3.5" />
                       </span>
                     </div>
@@ -1322,7 +1322,7 @@ export const PosView: React.FC = () => {
             <div className="space-y-4">
               <div className="flex items-center justify-between border-b border-slate-100 dark:border-slate-800 pb-3">
                 <h3 className="font-bold text-sm text-slate-900 dark:text-white flex items-center gap-2">
-                  <ShoppingCart className="w-4 h-4 text-[#C9A227]" />
+                  <ShoppingCart className="w-4 h-4 text-[#CDAF7D]" />
                   <span>{isAr ? 'سلة المبيعات الفورية' : 'Live Checkout Terminal Cart'}</span>
                 </h3>
                 <span className="text-[10px] font-mono text-slate-400">
@@ -1385,14 +1385,14 @@ export const PosView: React.FC = () => {
                 </div>
                 <div className="flex justify-between text-base font-black text-slate-900 dark:text-white border-t border-slate-100 dark:border-slate-800 pt-2 font-mono">
                   <span>Total Payable</span>
-                  <span className="text-[#0B1F3A] dark:text-[#C9A227]">{cartGrandTotal.toLocaleString()} SAR</span>
+                  <span className="text-[#0B1D36] dark:text-[#CDAF7D]">{cartGrandTotal.toLocaleString()} SAR</span>
                 </div>
               </div>
 
               <button
                 onClick={handleOpenCheckout}
                 disabled={cart.length === 0}
-                className="w-full py-3 rounded-xl bg-[#C9A227] hover:bg-[#B38E1F] disabled:opacity-50 text-white font-bold text-sm shadow-xs flex items-center justify-center gap-2 cursor-pointer transition"
+                className="w-full py-3 rounded-xl bg-[#CDAF7D] hover:bg-[#A98A5E] disabled:opacity-50 text-white font-bold text-sm shadow-xs flex items-center justify-center gap-2 cursor-pointer transition"
               >
                 <CreditCard className="w-4 h-4" />
                 <span>{isAr ? 'الدفع وإصدار الإيصال ZATCA' : 'Pay & Issue ZATCA Receipt'}</span>
@@ -1649,7 +1649,7 @@ export const PosView: React.FC = () => {
           <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 p-4 rounded-2xl bg-indigo-50 dark:bg-indigo-950/30 border border-indigo-200 dark:border-indigo-800/40">
             <div>
               <h3 className="font-bold text-sm text-indigo-950 dark:text-indigo-200 flex items-center gap-2">
-                <Monitor className="w-4 h-4 text-[#C9A227]" />
+                <Monitor className="w-4 h-4 text-[#CDAF7D]" />
                 <span>{isAr ? 'معاينة شاشة العميل الموجهة (Customer Pole Display)' : 'Customer-Facing Display Live Preview'}</span>
               </h3>
               <p className="text-xs text-indigo-800/80 dark:text-indigo-300/80 mt-0.5">
@@ -1660,9 +1660,9 @@ export const PosView: React.FC = () => {
             </div>
             <button
               onClick={() => CustomerDisplaySyncService.getInstance().openSecondaryWindow()}
-              className="px-4 py-2 rounded-xl bg-[#0B1F3A] hover:bg-[#153258] text-white font-bold text-xs flex items-center gap-2 shadow-xs cursor-pointer border border-[#C9A227]/40 whitespace-nowrap"
+              className="px-4 py-2 rounded-xl bg-[#0B1D36] hover:bg-[#16304F] text-white font-bold text-xs flex items-center gap-2 shadow-xs cursor-pointer border border-[#CDAF7D]/40 whitespace-nowrap"
             >
-              <ExternalLink className="w-3.5 h-3.5 text-[#C9A227]" />
+              <ExternalLink className="w-3.5 h-3.5 text-[#CDAF7D]" />
               <span>{isAr ? 'فتح في شاشة / نافذة ثانوية' : 'Pop-Out Secondary Window'}</span>
             </button>
           </div>
@@ -1739,7 +1739,7 @@ export const PosView: React.FC = () => {
                 </div>
                 <div className="flex justify-between font-bold text-slate-900 dark:text-white pt-1 border-t border-slate-200 dark:border-slate-700">
                   <span>Change Return:</span>
-                  <span className="text-[#0B1F3A] dark:text-[#C9A227] font-black">
+                  <span className="text-[#0B1D36] dark:text-[#CDAF7D] font-black">
                     {Math.max(0, (cardTendered + cashTendered + walletTendered) - cartGrandTotal).toLocaleString()} SAR
                   </span>
                 </div>
@@ -1755,7 +1755,7 @@ export const PosView: React.FC = () => {
               </button>
               <button
                 onClick={handleProcessCheckout}
-                className="px-5 py-2 bg-[#C9A227] hover:bg-[#B38E1F] text-white font-bold text-xs rounded-xl shadow-xs cursor-pointer"
+                className="px-5 py-2 bg-[#CDAF7D] hover:bg-[#A98A5E] text-white font-bold text-xs rounded-xl shadow-xs cursor-pointer"
               >
                 Confirm & Print ZATCA Receipt
               </button>

@@ -1,5 +1,5 @@
 /**
- * AM Business Platform — Tenant Identity & White-Label Branding Types
+ * AM Business OS — Tenant Identity & White-Label Branding Types
  * P0-08 Architecture Baseline: Authoritative Tenant-Scoped Identity Runtime
  */
 
@@ -9,7 +9,7 @@ export interface TenantBranding {
   companyId?: string; // Optional specific company or undefined for tenant-wide
 
   // Identity & Names
-  appName: string; // Application display name (e.g. 'AM Business Platform' or 'Apex Commercial ERP')
+  appName: string; // Application display name
   appNameAr: string; // Arabic display name
   legalCompanyName?: string; // Reference to legal company master, not duplicate source of truth
   tradingName: string; // Commercial trading name
@@ -21,11 +21,11 @@ export interface TenantBranding {
   faviconUrl?: string; // Browser tab favicon
 
   // Theme & Design Tokens (Strict Hex #RRGGBB)
-  primaryColor: string; // Primary brand color (e.g. '#0B1F3A')
+  primaryColor: string; // Primary brand color (e.g. '#0B1D36')
   secondaryColor: string; // Secondary brand color (e.g. '#1E3A8A')
   accentColor: string; // Accent/Highlight color (AM true gold)
-  surfaceColor: string; // Background/Surface color (e.g. '#FFFFFF' or '#F8FAFC')
-  textColor: string; // Foreground body text color (e.g. '#0F172A')
+  surfaceColor: string; // Background/Surface color (e.g. '#FFFFFF' or '#F2F4F7')
+  textColor: string; // Foreground body text color (e.g. '#2B2B2B')
 
   // Typography & Density
   fontFamily: AllowedFontFamily;
@@ -51,13 +51,13 @@ export interface TenantBranding {
   // Canonical AM Visual Identity & Platform Governance
   productName?: string; // Canonical product identity: 'AM ERP'
   productNameAr?: string; // Arabic product identity: 'إيه إم لتخطيط موارد المؤسسات'
-  brandFamily?: string; // Brand/product family: 'AM / Ahmed Mounir'
+  brandFamily?: string; // Brand/product family: 'AM CONSULTANT'
   brandFamilyAr?: string; // Arabic brand family: 'إيه إم / أحمد منير'
   positioning?: string; // Positioning: 'Financial Accountant | Business Analyst'
   positioningAr?: string; // Arabic positioning: 'محاسب مالي | محلل أعمال'
   motto?: string; // Approved motto: 'Every successful decision begins with an accurate number'
   mottoAr?: string; // Approved Arabic motto: 'كل قرار ناجح يبدأ برقم صحيح'
-  neutralColor?: string; // Supporting neutral: '#F8FAFC' / light grey
+  neutralColor?: string; // Supporting neutral: '#F2F4F7' / light grey
   borderLightColor?: string; // Supporting border: '#E2E8F0'
 }
 
@@ -145,41 +145,41 @@ export interface BrandingPublicMetadata {
 }
 
 export interface AMPlatformIdentity {
-  productName: 'AM Business OS' | 'AM ERP';
-  productNameAr: 'نظام إيه إم لإدارة الأعمال' | 'إيه إم لتخطيط موارد المؤسسات';
-  brandFamily: 'AM / Ahmed Mounir';
-  brandFamilyAr: 'إيه إم / أحمد منير';
-  positioning: 'Financial Accountant | Business Analyst';
-  positioningAr: 'محاسب مالي | محلل أعمال';
-  motto: 'Every successful decision begins with an accurate number';
-  mottoAr: 'كل قرار ناجح يبدأ برقم صحيح';
-  primaryColor: '#0B1F3A';
-  accentColor: '#C9A227';
-  neutralColor: '#F8FAFC';
-  borderLightColor: '#E2E8F0';
-  surfaceColor: '#FFFFFF';
-  textColor: '#0F172A';
-  monogram: 'AM';
-  fontFamily: 'Plus Jakarta Sans';
-  arabicFontFamily: 'Cairo';
-  visualDirection: 'premium, minimal, corporate, Egyptian-business oriented';
+  productName: string;
+  productNameAr: string;
+  brandFamily: string;
+  brandFamilyAr: string;
+  positioning: string;
+  positioningAr: string;
+  motto: string;
+  mottoAr: string;
+  primaryColor: string;
+  accentColor: string;
+  neutralColor: string;
+  borderLightColor: string;
+  surfaceColor: string;
+  textColor: string;
+  monogram: string;
+  fontFamily: AllowedFontFamily;
+  arabicFontFamily: AllowedFontFamily;
+  visualDirection: string;
 }
 
 export const APPROVED_AM_IDENTITY: AMPlatformIdentity = {
   productName: 'AM Business OS',
   productNameAr: 'نظام إيه إم لإدارة الأعمال',
-  brandFamily: 'AM / Ahmed Mounir',
-  brandFamilyAr: 'إيه إم / أحمد منير',
-  positioning: 'Financial Accountant | Business Analyst',
-  positioningAr: 'محاسب مالي | محلل أعمال',
-  motto: 'Every successful decision begins with an accurate number',
-  mottoAr: 'كل قرار ناجح يبدأ برقم صحيح',
-  primaryColor: '#0B1F3A',
-  accentColor: '#C9A227',
-  neutralColor: '#F8FAFC',
-  borderLightColor: '#E2E8F0',
+  brandFamily: 'AM CONSULTANT',
+  brandFamilyAr: 'إيه إم للاستشارات',
+  positioning: 'Integrated ERP & business management',
+  positioningAr: 'منصة متكاملة لتخطيط موارد المؤسسات وإدارة الأعمال',
+  motto: 'Powered by AM CONSULTANT',
+  mottoAr: 'بدعم من AM CONSULTANT',
+  primaryColor: '#0B1D36',
+  accentColor: '#CDAF7D',
+  neutralColor: '#F2F4F7',
+  borderLightColor: '#E1E5EA',
   surfaceColor: '#FFFFFF',
-  textColor: '#0F172A',
+  textColor: '#2B2B2B',
   monogram: 'AM',
   fontFamily: 'Plus Jakarta Sans',
   arabicFontFamily: 'Cairo',

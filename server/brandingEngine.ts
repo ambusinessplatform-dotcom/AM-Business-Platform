@@ -50,27 +50,27 @@ export class BrandingEngine {
       id: `brand-${tenantId}${companyId ? `-${companyId}` : ''}`,
       tenantId,
       companyId,
-      appName: 'AM Business Platform',
-      appNameAr: 'منصة إيه إم للأعمال',
+      appName: 'AM Business OS',
+      appNameAr: 'نظام إيه إم لإدارة الأعمال',
       legalCompanyName: 'AM Enterprises Group Ltd.',
-      tradingName: 'AM Business Operating Platform',
+      tradingName: 'Integrated ERP & business management',
       shortName: 'AM',
-      logoUrl: '',
-      darkLogoUrl: '',
-      faviconUrl: '',
-      primaryColor: '#0B1F3A',
-      secondaryColor: '#1E3A8A',
-      accentColor: '#C9A227',
+      logoUrl: '/am-logo.svg',
+      darkLogoUrl: '/am-logo.svg',
+      faviconUrl: '/am-monogram.svg',
+      primaryColor: '#0B1D36',
+      secondaryColor: '#16304F',
+      accentColor: '#CDAF7D',
       surfaceColor: '#FFFFFF',
-      textColor: '#0F172A',
+      textColor: '#2B2B2B',
       fontFamily: 'Inter',
       borderRadius: 'lg',
-      supportEmail: 'support@am-platform.com',
-      supportPhone: '+966 11 450 0000',
-      website: 'https://am-platform.com',
-      addressDisplay: 'King Fahd Road, Riyadh, Saudi Arabia',
-      legalFooterText: 'Authorized & Licensed Enterprise SaaS Platform. Certified IFRS & ZATCA Compliant.',
-      invoiceFooterText: 'Thank you for your business. For support inquiries, contact support@am-platform.com.',
+      supportEmail: '',
+      supportPhone: undefined,
+      website: undefined,
+      addressDisplay: undefined,
+      legalFooterText: 'AM Business OS | Integrated ERP & business management',
+      invoiceFooterText: 'Powered by AM CONSULTANT',
       showPoweredBy: true,
       brandingVersion: 1,
       effectiveTimestamp: new Date().toISOString(),
@@ -132,8 +132,9 @@ export class BrandingEngine {
     defaultBrand.appName = APPROVED_AM_IDENTITY.productName;
     defaultBrand.appNameAr = APPROVED_AM_IDENTITY.productNameAr;
     defaultBrand.fontFamily = APPROVED_AM_IDENTITY.fontFamily;
-    defaultBrand.logoUrl = '/api/v1/branding/assets/platform/am-logo.svg';
-    defaultBrand.faviconUrl = '/api/v1/branding/assets/platform/am-monogram.svg';
+    defaultBrand.logoUrl = '/am-logo.svg';
+    defaultBrand.darkLogoUrl = '/am-logo.svg';
+    defaultBrand.faviconUrl = '/am-monogram.svg';
     return defaultBrand;
   }
 
@@ -229,9 +230,9 @@ export class BrandingEngine {
 
   public static validateThemeContrast(
     primaryColor: string,
-    accentColor: string = '#C9A227',
+    accentColor: string = '#CDAF7D',
     surfaceColor: string = '#FFFFFF',
-    textColor: string = '#0F172A'
+    textColor: string = '#2B2B2B'
   ): { passesWcagAA: boolean; report: ContrastEvaluationReport } {
     const engine = BrandingEngine.getInstance();
     const report = engine.evaluateContrast(textColor, surfaceColor, primaryColor, accentColor);
@@ -245,7 +246,7 @@ export class BrandingEngine {
     textColor: string,
     surfaceColor: string,
     primaryColor: string,
-    accentColor: string = '#C9A227'
+    accentColor: string = '#CDAF7D'
   ): ContrastEvaluationReport {
     const ratioTextOnSurface = BrandingEngine.calculateContrastRatio(textColor, surfaceColor);
     const ratioPrimaryOnSurface = BrandingEngine.calculateContrastRatio(primaryColor, surfaceColor);
@@ -359,7 +360,7 @@ export class BrandingEngine {
 
     const primaryColor = payload.primaryColor !== undefined ? payload.primaryColor.trim() : current.primaryColor;
     if (!hexPattern.test(primaryColor)) {
-      errors.push(`Primary color '${primaryColor}' is invalid. Must be a 7-character hexadecimal string (e.g. #0B1F3A).`);
+      errors.push(`Primary color '${primaryColor}' is invalid. Must be a 7-character hexadecimal string (e.g. #0B1D36).`);
     }
 
     const secondaryColor = payload.secondaryColor !== undefined ? payload.secondaryColor.trim() : current.secondaryColor;

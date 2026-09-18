@@ -297,10 +297,10 @@ export const BrandingSettingsView: React.FC = () => {
       </div>
 
       {/* AM Platform Identity & Architectural Governance Card */}
-      <div className="bg-[#0B1F3A] text-white rounded-2xl p-5 border border-[#153258] shadow-md space-y-4">
+      <div className="bg-[#0B1D36] text-white rounded-2xl p-5 border border-[#16304F] shadow-md space-y-4">
         <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-white/10 pb-4">
           <div className="flex items-center gap-3">
-            <div className="w-12 h-12 rounded-xl bg-[#0B1F3A] border-2 border-[#C9A227] flex items-center justify-center font-black text-lg text-[#C9A227] shadow-md shrink-0">
+            <div className="w-12 h-12 rounded-xl bg-[#0B1D36] border-2 border-[#CDAF7D] flex items-center justify-center font-black text-lg text-[#CDAF7D] shadow-md shrink-0">
               AM
             </div>
             <div>
@@ -308,7 +308,7 @@ export const BrandingSettingsView: React.FC = () => {
                 <span className="font-extrabold text-base tracking-tight text-white">
                   AM ERP • Ahmed Mounir
                 </span>
-                <span className="px-2 py-0.5 rounded-md text-[10px] font-bold bg-[#C9A227]/20 text-[#C9A227] border border-[#C9A227]/40">
+                <span className="px-2 py-0.5 rounded-md text-[10px] font-bold bg-[#CDAF7D]/20 text-[#CDAF7D] border border-[#CDAF7D]/40">
                   Fixed Master Identity
                 </span>
                 <span className="px-2 py-0.5 rounded-md text-[10px] font-bold bg-emerald-500/20 text-emerald-300 border border-emerald-500/40">
@@ -325,7 +325,7 @@ export const BrandingSettingsView: React.FC = () => {
             <span className="text-[10px] text-slate-400 font-semibold block uppercase tracking-wider">
               {isAr ? 'شعار المنصة المعتمد' : 'Official Brand Motto'}
             </span>
-            <span className="text-xs font-bold text-[#C9A227]">
+            <span className="text-xs font-bold text-[#CDAF7D]">
               {isAr ? '«كل قرار ناجح يبدأ برقم صحيح»' : '"Every successful decision begins with an accurate number"'}
             </span>
           </div>
@@ -335,34 +335,34 @@ export const BrandingSettingsView: React.FC = () => {
         <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-6 gap-3 text-xs">
           <div className="bg-white/5 border border-white/10 rounded-xl p-2.5 space-y-1">
             <div className="flex items-center gap-2">
-              <span className="w-4 h-4 rounded-md border border-white/20 shrink-0" style={{ backgroundColor: '#0B1F3A' }} />
+              <span className="w-4 h-4 rounded-md border border-white/20 shrink-0" style={{ backgroundColor: '#0B1D36' }} />
               <span className="font-bold text-[11px] text-white">Navy Primary</span>
             </div>
-            <div className="text-[10px] font-mono text-slate-300">#0B1F3A</div>
+            <div className="text-[10px] font-mono text-slate-300">#0B1D36</div>
           </div>
 
           <div className="bg-white/5 border border-white/10 rounded-xl p-2.5 space-y-1">
             <div className="flex items-center gap-2">
-              <span className="w-4 h-4 rounded-md border border-white/20 shrink-0" style={{ backgroundColor: '#153258' }} />
+              <span className="w-4 h-4 rounded-md border border-white/20 shrink-0" style={{ backgroundColor: '#16304F' }} />
               <span className="font-bold text-[11px] text-white">Navy Secondary</span>
             </div>
-            <div className="text-[10px] font-mono text-slate-300">#153258</div>
+            <div className="text-[10px] font-mono text-slate-300">#16304F</div>
           </div>
 
           <div className="bg-white/5 border border-white/10 rounded-xl p-2.5 space-y-1">
             <div className="flex items-center gap-2">
-              <span className="w-4 h-4 rounded-md border border-white/20 shrink-0" style={{ backgroundColor: '#C9A227' }} />
+              <span className="w-4 h-4 rounded-md border border-white/20 shrink-0" style={{ backgroundColor: '#CDAF7D' }} />
               <span className="font-bold text-[11px] text-white">Accent Amber</span>
             </div>
-            <div className="text-[10px] font-mono text-slate-300">#C9A227</div>
+            <div className="text-[10px] font-mono text-slate-300">#CDAF7D</div>
           </div>
 
           <div className="bg-white/5 border border-white/10 rounded-xl p-2.5 space-y-1">
             <div className="flex items-center gap-2">
-              <span className="w-4 h-4 rounded-md border border-white/20 shrink-0" style={{ backgroundColor: '#F8FAFC' }} />
+              <span className="w-4 h-4 rounded-md border border-white/20 shrink-0" style={{ backgroundColor: '#F2F4F7' }} />
               <span className="font-bold text-[11px] text-white">Neutral Canvas</span>
             </div>
-            <div className="text-[10px] font-mono text-slate-300">#F8FAFC</div>
+            <div className="text-[10px] font-mono text-slate-300">#F2F4F7</div>
           </div>
 
           <div className="bg-white/5 border border-white/10 rounded-xl p-2.5 space-y-1">
@@ -380,7 +380,7 @@ export const BrandingSettingsView: React.FC = () => {
         </div>
 
         <div className="bg-white/5 border border-white/10 rounded-xl p-3 text-[11px] text-slate-300 flex items-start gap-2">
-          <Shield className="w-4 h-4 text-[#C9A227] shrink-0 mt-0.5" />
+          <Shield className="w-4 h-4 text-[#CDAF7D] shrink-0 mt-0.5" />
           <span>
             {isAr
               ? 'حوكمة التعددية المؤسسية: هوية المنصة إيه إم غير قابلة للتحريف أو التبديل بواسطة المستأجرين. تخصيص المستأجر يقتصر على مساحات عمله وفواتيره وشاشات العميل مع الحفاظ على توقيع وموثوقية المنصة.'
@@ -602,14 +602,14 @@ export const BrandingSettingsView: React.FC = () => {
                 <div className="flex items-center gap-2">
                   <input
                     type="color"
-                    value={formData.primaryColor || '#0B1F3A'}
+                    value={formData.primaryColor || '#0B1D36'}
                     disabled={!isAuthorized}
                     onChange={e => handleInputChange('primaryColor', e.target.value)}
                     className="w-8 h-8 rounded-lg border border-slate-200 dark:border-slate-700 cursor-pointer p-0.5 bg-transparent"
                   />
                   <input
                     type="text"
-                    value={formData.primaryColor || '#0B1F3A'}
+                    value={formData.primaryColor || '#0B1D36'}
                     disabled={!isAuthorized}
                     onChange={e => handleInputChange('primaryColor', e.target.value)}
                     className="w-full px-2 py-1.5 rounded-lg text-xs font-mono bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 uppercase"
@@ -648,14 +648,14 @@ export const BrandingSettingsView: React.FC = () => {
                 <div className="flex items-center gap-2">
                   <input
                     type="color"
-                    value={formData.accentColor || '#C9A227'}
+                    value={formData.accentColor || '#CDAF7D'}
                     disabled={!isAuthorized}
                     onChange={e => handleInputChange('accentColor', e.target.value)}
                     className="w-8 h-8 rounded-lg border border-slate-200 dark:border-slate-700 cursor-pointer p-0.5 bg-transparent"
                   />
                   <input
                     type="text"
-                    value={formData.accentColor || '#C9A227'}
+                    value={formData.accentColor || '#CDAF7D'}
                     disabled={!isAuthorized}
                     onChange={e => handleInputChange('accentColor', e.target.value)}
                     className="w-full px-2 py-1.5 rounded-lg text-xs font-mono bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 uppercase"
@@ -694,14 +694,14 @@ export const BrandingSettingsView: React.FC = () => {
                 <div className="flex items-center gap-2">
                   <input
                     type="color"
-                    value={formData.textColor || '#0F172A'}
+                    value={formData.textColor || '#2B2B2B'}
                     disabled={!isAuthorized}
                     onChange={e => handleInputChange('textColor', e.target.value)}
                     className="w-8 h-8 rounded-lg border border-slate-200 dark:border-slate-700 cursor-pointer p-0.5 bg-transparent"
                   />
                   <input
                     type="text"
-                    value={formData.textColor || '#0F172A'}
+                    value={formData.textColor || '#2B2B2B'}
                     disabled={!isAuthorized}
                     onChange={e => handleInputChange('textColor', e.target.value)}
                     className="w-full px-2 py-1.5 rounded-lg text-xs font-mono bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 uppercase"
@@ -798,7 +798,7 @@ export const BrandingSettingsView: React.FC = () => {
               <div className="flex items-center justify-between pt-2 border-t border-slate-100 dark:border-slate-800">
                 <div>
                   <span className="text-xs font-bold text-slate-900 dark:text-white block">
-                    {isAr ? 'إظهار علامة منصة إيه إم للأعمال (Powered by AM Platform)' : 'Show "Powered by AM Platform"'}
+                    {isAr ? 'إظهار علامة AM CONSULTANT (Powered by AM CONSULTANT)' : 'Show "Powered by AM CONSULTANT"'}
                   </span>
                   <span className="text-[11px] text-slate-500 dark:text-slate-400">
                     {isAr ? 'متاح للتحكم لعملاء باقة المؤسسات Enterprise Edition' : 'White-label control governed by edition policy'}
@@ -892,25 +892,25 @@ export const BrandingSettingsView: React.FC = () => {
                 <div 
                   className="rounded-xl p-3 border shadow-xs flex items-center justify-between"
                   style={{
-                    backgroundColor: previewTheme === 'dark' ? '#0F172A' : (formData.surfaceColor || '#FFFFFF'),
+                    backgroundColor: previewTheme === 'dark' ? '#2B2B2B' : (formData.surfaceColor || '#FFFFFF'),
                     borderColor: previewTheme === 'dark' ? '#334155' : '#E2E8F0'
                   }}
                 >
                   <div className="flex items-center gap-2.5">
                     <div 
                       className="w-8 h-8 rounded-lg flex items-center justify-center font-bold text-white shadow-xs"
-                      style={{ backgroundColor: formData.primaryColor || '#0B1F3A' }}
+                      style={{ backgroundColor: formData.primaryColor || '#0B1D36' }}
                     >
                       {formData.logoUrl ? (
                         <img src={formData.logoUrl} alt="Logo" className="max-h-6 max-w-6 object-contain" />
                       ) : (
-                        <span style={{ color: formData.accentColor || '#C9A227' }}>
+                        <span style={{ color: formData.accentColor || '#CDAF7D' }}>
                           {formData.shortName || 'AM'}
                         </span>
                       )}
                     </div>
                     <div>
-                      <div className="font-bold text-xs leading-tight" style={{ color: previewTheme === 'dark' ? '#FFFFFF' : (formData.textColor || '#0F172A') }}>
+                      <div className="font-bold text-xs leading-tight" style={{ color: previewTheme === 'dark' ? '#FFFFFF' : (formData.textColor || '#2B2B2B') }}>
                         {isAr ? (formData.appNameAr || formData.appName) : (formData.appName || 'AM Business Platform')}
                       </div>
                       <div className="text-[9px] text-slate-400">
@@ -922,8 +922,8 @@ export const BrandingSettingsView: React.FC = () => {
                   <span 
                     className="text-[10px] font-bold px-2 py-0.5 rounded-md"
                     style={{ 
-                      backgroundColor: `${formData.accentColor || '#C9A227'}22`,
-                      color: formData.accentColor || '#C9A227'
+                      backgroundColor: `${formData.accentColor || '#CDAF7D'}22`,
+                      color: formData.accentColor || '#CDAF7D'
                     }}
                   >
                     Enterprise
@@ -934,22 +934,22 @@ export const BrandingSettingsView: React.FC = () => {
                 <div 
                   className="rounded-xl p-3 border space-y-2 text-xs"
                   style={{
-                    backgroundColor: previewTheme === 'dark' ? '#0F172A' : (formData.surfaceColor || '#FFFFFF'),
+                    backgroundColor: previewTheme === 'dark' ? '#2B2B2B' : (formData.surfaceColor || '#FFFFFF'),
                     borderColor: previewTheme === 'dark' ? '#334155' : '#E2E8F0'
                   }}
                 >
                   <div 
                     className="p-2 rounded-lg font-bold flex items-center justify-between"
                     style={{
-                      backgroundColor: formData.primaryColor || '#0B1F3A',
+                      backgroundColor: formData.primaryColor || '#0B1D36',
                       color: '#FFFFFF'
                     }}
                   >
                     <span className="flex items-center gap-2">
-                      <Layout className="w-3.5 h-3.5" style={{ color: formData.accentColor || '#C9A227' }} />
+                      <Layout className="w-3.5 h-3.5" style={{ color: formData.accentColor || '#CDAF7D' }} />
                       <span>{isAr ? 'لوحة التحكم التنفيذية' : 'Executive Dashboard'}</span>
                     </span>
-                    <ChevronRight className="w-3 h-3" style={{ color: formData.accentColor || '#C9A227' }} />
+                    <ChevronRight className="w-3 h-3" style={{ color: formData.accentColor || '#CDAF7D' }} />
                   </div>
 
                   <div className="p-2 rounded-lg text-slate-500 dark:text-slate-400 flex items-center gap-2">
@@ -959,7 +959,7 @@ export const BrandingSettingsView: React.FC = () => {
 
                   {formData.showPoweredBy && (
                     <div className="pt-2 border-t border-slate-200 dark:border-slate-800 text-[9px] text-slate-400 text-center">
-                      Powered by AM Business Platform
+                      Powered by AM CONSULTANT
                     </div>
                   )}
                 </div>
@@ -976,25 +976,25 @@ export const BrandingSettingsView: React.FC = () => {
                 <div 
                   className="rounded-xl p-6 border shadow-xs text-center space-y-4"
                   style={{
-                    backgroundColor: previewTheme === 'dark' ? '#0F172A' : (formData.surfaceColor || '#FFFFFF'),
+                    backgroundColor: previewTheme === 'dark' ? '#2B2B2B' : (formData.surfaceColor || '#FFFFFF'),
                     borderColor: previewTheme === 'dark' ? '#334155' : '#E2E8F0'
                   }}
                 >
                   <div 
                     className="w-12 h-12 rounded-xl mx-auto flex items-center justify-center font-bold text-white shadow-md"
-                    style={{ backgroundColor: formData.primaryColor || '#0B1F3A' }}
+                    style={{ backgroundColor: formData.primaryColor || '#0B1D36' }}
                   >
                     {formData.logoUrl ? (
                       <img src={formData.logoUrl} alt="Logo" className="max-h-8 max-w-8 object-contain" />
                     ) : (
-                      <span className="text-lg" style={{ color: formData.accentColor || '#C9A227' }}>
+                      <span className="text-lg" style={{ color: formData.accentColor || '#CDAF7D' }}>
                         {formData.shortName || 'AM'}
                       </span>
                     )}
                   </div>
 
                   <div>
-                    <h3 className="font-bold text-sm" style={{ color: previewTheme === 'dark' ? '#FFFFFF' : (formData.textColor || '#0F172A') }}>
+                    <h3 className="font-bold text-sm" style={{ color: previewTheme === 'dark' ? '#FFFFFF' : (formData.textColor || '#2B2B2B') }}>
                       {isAr ? (formData.appNameAr || formData.appName) : (formData.appName || 'Enterprise Portal')}
                     </h3>
                     <p className="text-[11px] text-slate-400">
@@ -1014,7 +1014,7 @@ export const BrandingSettingsView: React.FC = () => {
                   <button
                     type="button"
                     className="w-full py-2 rounded-xl text-xs font-bold text-white transition shadow-xs"
-                    style={{ backgroundColor: formData.primaryColor || '#0B1F3A' }}
+                    style={{ backgroundColor: formData.primaryColor || '#0B1D36' }}
                   >
                     {isAr ? 'تسجيل الدخول' : 'Sign In'}
                   </button>

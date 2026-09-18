@@ -345,10 +345,10 @@ export const CorePlatformView: React.FC<CorePlatformViewProps> = ({ initialTab =
         <div className="space-y-6">
           
           {/* Header Banner */}
-          <div className="bg-[#0B1F3A] border border-[#153258] rounded-2xl p-6 text-white shadow-sm space-y-4">
+          <div className="bg-[#0B1D36] border border-[#16304F] rounded-2xl p-6 text-white shadow-sm space-y-4">
             <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
               <div>
-                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#153258] border border-brand-gold/30 text-brand-gold text-xs font-mono mb-2">
+                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#16304F] border border-brand-gold/30 text-brand-gold text-xs font-mono mb-2">
                   <Cpu className="w-3.5 h-3.5" />
                   <span>CENTRAL CONFIGURATION</span>
                 </div>
@@ -1109,9 +1109,9 @@ export const CorePlatformView: React.FC<CorePlatformViewProps> = ({ initialTab =
       {/* TAB 5: Tenants & Companies */}
       {activeTab === 'tenants' && (
         <div className="space-y-6">
-          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 p-5 rounded-2xl bg-[#0B1F3A] border border-[#153258] text-white shadow-sm">
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 p-5 rounded-2xl bg-[#0B1D36] border border-[#16304F] text-white shadow-sm">
             <div className="flex items-center gap-3">
-              <div className="p-3 rounded-2xl bg-[#153258] border border-brand-gold/40 text-brand-gold">
+              <div className="p-3 rounded-2xl bg-[#16304F] border border-brand-gold/40 text-brand-gold">
                 <Building2 className="w-6 h-6" />
               </div>
               <div>

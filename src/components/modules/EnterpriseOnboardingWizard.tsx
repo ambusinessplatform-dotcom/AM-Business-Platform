@@ -273,13 +273,13 @@ export const EnterpriseOnboardingWizard: React.FC = () => {
       <div className="min-h-full bg-[#061224] px-4 py-10 text-white sm:px-8" dir={isAr ? 'rtl' : 'ltr'}>
         <div className="mx-auto max-w-3xl">
           <div className="mb-8 flex items-center gap-4">
-            <img src="/am-monogram.svg" alt="AM CONSULTANT" className="h-16 w-16 rounded-xl border border-[#C9A227] bg-[#0B1F3A] p-3" />
+            <img src="/am-monogram.svg" alt="AM CONSULTANT" className="h-16 w-16 rounded-xl border border-[#CDAF7D] bg-[#0B1D36] p-3" />
             <div>
-              <p className="text-xs font-semibold uppercase tracking-[0.24em] text-[#C9A227]">AM CONSULTANT</p>
+              <p className="text-xs font-semibold uppercase tracking-[0.24em] text-[#CDAF7D]">AM CONSULTANT</p>
               <h1 className="mt-1 text-3xl font-black">{isAr ? 'تم إعداد منشأتك بنجاح' : 'Your business is set up successfully'}</h1>
             </div>
           </div>
-          <div className="rounded-2xl border border-white/10 bg-[#0B1F3A] p-6 shadow-2xl sm:p-8">
+          <div className="rounded-2xl border border-white/10 bg-[#0B1D36] p-6 shadow-2xl sm:p-8">
             <div className="grid gap-3 sm:grid-cols-2 text-sm">
               <div><span className="text-slate-400">{isAr ? 'المنشأة' : 'Business'}:</span> {activeCompany?.name || formData.companyName || formData.tenantName}</div>
               <div><span className="text-slate-400">{isAr ? 'النشاط' : 'Activity'}:</span> {wizardState.activeProfile?.name || formData.profileId}</div>
@@ -291,7 +291,7 @@ export const EnterpriseOnboardingWizard: React.FC = () => {
               <p className="mt-1 text-emerald-200/80">{isAr ? 'لم يتم إدخال أي أرصدة أو حركات تشغيلية تلقائيًا.' : 'No balances or operational transactions were entered automatically.'}</p>
             </div>
             <div className="mt-6 flex flex-col gap-3 sm:flex-row">
-              <button type="button" onClick={() => { markOnboardingCompleted(); setActiveModule('accounting'); }} className="inline-flex flex-1 items-center justify-center gap-2 rounded-lg bg-[#C9A227] px-5 py-3 font-bold text-[#061224]">
+              <button type="button" onClick={() => { markOnboardingCompleted(); setActiveModule('accounting'); }} className="inline-flex flex-1 items-center justify-center gap-2 rounded-lg bg-[#CDAF7D] px-5 py-3 font-bold text-[#061224]">
                 {isAr ? 'إدخال الأرصدة الافتتاحية' : 'Enter Opening Balances'}
               </button>
               <button type="button" onClick={() => { markOnboardingCompleted(); setActiveModule('dashboard'); }} className="inline-flex flex-1 items-center justify-center gap-2 rounded-lg border border-white/20 px-5 py-3 font-bold text-white">
@@ -310,14 +310,14 @@ export const EnterpriseOnboardingWizard: React.FC = () => {
         <div className="min-h-screen bg-[#061224] px-4 py-10 text-white sm:px-8" dir={isAr ? 'rtl' : 'ltr'}>
           <div className="mx-auto max-w-3xl">
             <div className="mb-8 flex items-center gap-4">
-              <img src="/am-monogram.svg" alt="AM" className="h-16 w-16 rounded-xl border border-[#C9A227] bg-[#0B1F3A] p-3" />
+              <img src="/am-monogram.svg" alt="AM" className="h-16 w-16 rounded-xl border border-[#CDAF7D] bg-[#0B1D36] p-3" />
               <div>
-                <p className="text-xs font-semibold uppercase tracking-[0.24em] text-[#C9A227]">AM CONSULTANT</p>
+                <p className="text-xs font-semibold uppercase tracking-[0.24em] text-[#CDAF7D]">AM CONSULTANT</p>
                 <p className="text-[11px] text-slate-300">{isAr ? 'منصة مالية وإدارية للمؤسسات' : 'Financial & Management Platform'}</p>
                 <h1 className="mt-1 text-3xl font-black">{isAr ? 'ابدأ إعداد منشأتك' : 'Set up your business'}</h1>
               </div>
             </div>
-            <div className="rounded-2xl border border-white/10 bg-[#0B1F3A] p-6 shadow-2xl sm:p-8">
+            <div className="rounded-2xl border border-white/10 bg-[#0B1D36] p-6 shadow-2xl sm:p-8">
               <div className="mb-6 grid gap-3 sm:grid-cols-3">
                 {[
                   isAr ? 'هوية المنشأة' : 'Business identity',
@@ -325,7 +325,7 @@ export const EnterpriseOnboardingWizard: React.FC = () => {
                   isAr ? 'المستخدم والأرصدة' : 'Admin & balances'
                 ].map((label, index) => (
                   <div key={label} className="rounded-lg border border-white/10 bg-white/5 p-3 text-sm">
-                    <span className="mb-2 block text-xs text-[#C9A227]">{index + 1}</span>{label}
+                    <span className="mb-2 block text-xs text-[#CDAF7D]">{index + 1}</span>{label}
                   </div>
                 ))}
               </div>
@@ -345,7 +345,7 @@ export const EnterpriseOnboardingWizard: React.FC = () => {
                 </label>
               </div>
               {requestError && <p role="alert" className="mt-4 rounded-lg border border-rose-400/40 bg-rose-950/40 p-3 text-sm text-rose-200">{requestError}</p>}
-              <button type="button" disabled={bootstraping} onClick={handleBootstrapSetup} className="mt-6 inline-flex items-center gap-2 rounded-lg bg-[#C9A227] px-5 py-3 font-bold text-[#061224] disabled:opacity-60">
+              <button type="button" disabled={bootstraping} onClick={handleBootstrapSetup} className="mt-6 inline-flex items-center gap-2 rounded-lg bg-[#CDAF7D] px-5 py-3 font-bold text-[#061224] disabled:opacity-60">
                 {bootstraping ? <RefreshCw className="h-4 w-4 animate-spin" /> : <ArrowRight className="h-4 w-4" />}
                 {isAr ? 'حفظ وبدء المعالج' : 'Save and start setup'}
               </button>
@@ -377,10 +377,10 @@ export const EnterpriseOnboardingWizard: React.FC = () => {
       <div className="max-w-7xl mx-auto h-full min-h-0 overflow-y-auto p-4 sm:p-6 lg:p-8 space-y-6">
       
       {/* AM Enterprise Header Bar */}
-      <div className="bg-[#0B1F3A] text-white border border-[#153258] rounded-2xl p-6 shadow-md flex flex-col md:flex-row md:items-center justify-between gap-4">
+      <div className="bg-[#0B1D36] text-white border border-[#16304F] rounded-2xl p-6 shadow-md flex flex-col md:flex-row md:items-center justify-between gap-4">
         <div className="space-y-1">
           <div className="flex items-center gap-3">
-            <div className="w-12 h-12 rounded-xl bg-[#0B1F3A] border-2 border-[#C9A227] text-[#C9A227] flex items-center justify-center font-black text-lg shadow-sm">
+            <div className="w-12 h-12 rounded-xl bg-[#0B1D36] border-2 border-[#CDAF7D] text-[#CDAF7D] flex items-center justify-center font-black text-lg shadow-sm">
               AM
             </div>
             <div>
@@ -388,7 +388,7 @@ export const EnterpriseOnboardingWizard: React.FC = () => {
                 <h1 className="text-xl sm:text-2xl font-black text-white tracking-tight">
                   {isAr ? 'معالج إعداد المنشأة' : 'Company Setup Wizard'}
                 </h1>
-                <span className="hidden sm:inline-flex items-center px-2 py-0.5 rounded-md text-[10px] font-bold bg-[#C9A227]/20 text-[#C9A227] border border-[#C9A227]/40">
+                <span className="hidden sm:inline-flex items-center px-2 py-0.5 rounded-md text-[10px] font-bold bg-[#CDAF7D]/20 text-[#CDAF7D] border border-[#CDAF7D]/40">
                   إعدادات منصة الأعمال
                 </span>
               </div>
@@ -406,14 +406,14 @@ export const EnterpriseOnboardingWizard: React.FC = () => {
             <span className="text-[10px] font-semibold uppercase tracking-wider text-slate-300">
               {isAr ? 'التقدم الإجمالي' : 'Total Progress'}
             </span>
-            <div className="text-lg font-black text-[#C9A227]">
+            <div className="text-lg font-black text-[#CDAF7D]">
               {progressPercent}% <span className="text-xs font-normal text-slate-400">({activeStep} / 19)</span>
             </div>
           </div>
 
           <div className="w-24 bg-white/10 rounded-full h-2.5 overflow-hidden border border-white/20">
             <div 
-              className="bg-[#C9A227] h-full transition-all duration-300 rounded-full shadow-xs"
+              className="bg-[#CDAF7D] h-full transition-all duration-300 rounded-full shadow-xs"
               style={{ width: `${progressPercent}%` }}
             />
           </div>
@@ -658,26 +658,26 @@ export const EnterpriseOnboardingWizard: React.FC = () => {
               {activeStep === 4 && (
                 <div className="space-y-4">
                   {/* Master AM Platform Anchor Information */}
-                  <div className="bg-[#0B1F3A] text-white p-4 rounded-xl border border-[#153258] flex items-center justify-between gap-4">
+                  <div className="bg-[#0B1D36] text-white p-4 rounded-xl border border-[#16304F] flex items-center justify-between gap-4">
                     <div className="flex items-center gap-3">
-                      <div className="w-10 h-10 rounded-lg bg-[#0B1F3A] border border-[#C9A227] flex items-center justify-center font-black text-[#C9A227]">
+                      <div className="w-10 h-10 rounded-lg bg-[#0B1D36] border border-[#CDAF7D] flex items-center justify-center font-black text-[#CDAF7D]">
                         AM
                       </div>
                       <div>
                         <div className="text-xs font-bold text-white flex items-center gap-2">
                           <span>{isAr ? 'هوية منصة إيه إم للأعمال' : 'Business Platform Identity'}</span>
-                          <span className="text-[10px] px-1.5 py-0.2 rounded bg-[#C9A227]/20 text-[#C9A227] border border-[#C9A227]/40">
+                          <span className="text-[10px] px-1.5 py-0.2 rounded bg-[#CDAF7D]/20 text-[#CDAF7D] border border-[#CDAF7D]/40">
                             Fixed Master Identity
                           </span>
                         </div>
                         <p className="text-[11px] text-slate-300">
                           {isAr 
-                            ? 'ألوان النواة: كحلي داكن (#0B1F3A) • ذهبي حقيقي (#C9A227) • خطوط Plus Jakarta Sans و Cairo'
+                            ? 'ألوان النواة: كحلي داكن (#0B1D36) • ذهبي حقيقي (#CDAF7D) • خطوط Plus Jakarta Sans و Cairo'
                             : 'ألوان وهوية العرض المعتمدة للمنصة'}
                         </p>
                       </div>
                     </div>
-                    <div className="hidden sm:block text-right rtl:text-left text-[11px] text-[#C9A227] font-bold">
+                    <div className="hidden sm:block text-right rtl:text-left text-[11px] text-[#CDAF7D] font-bold">
                       {isAr ? '«كل قرار ناجح يبدأ برقم صحيح»' : '"Accurate Numbers First"'}
                     </div>
                   </div>
@@ -691,13 +691,13 @@ export const EnterpriseOnboardingWizard: React.FC = () => {
                         <input
                           type="color"
                           className="w-10 h-10 rounded border border-slate-300 cursor-pointer shrink-0"
-                          value={formData.primaryColor || '#0B1F3A'}
+                          value={formData.primaryColor || '#0B1D36'}
                           onChange={(e) => handleInputChange('primaryColor', e.target.value)}
                         />
                         <input
                           type="text"
                           className="flex-1 px-3 py-2 text-sm rounded-lg border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-800 font-mono"
-                          value={formData.primaryColor || '#0B1F3A'}
+                          value={formData.primaryColor || '#0B1D36'}
                           onChange={(e) => handleInputChange('primaryColor', e.target.value)}
                         />
                       </div>
@@ -711,13 +711,13 @@ export const EnterpriseOnboardingWizard: React.FC = () => {
                         <input
                           type="color"
                           className="w-10 h-10 rounded border border-slate-300 cursor-pointer shrink-0"
-                          value={formData.accentColor || '#C9A227'}
+                          value={formData.accentColor || '#CDAF7D'}
                           onChange={(e) => handleInputChange('accentColor', e.target.value)}
                         />
                         <input
                           type="text"
                           className="flex-1 px-3 py-2 text-sm rounded-lg border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-800 font-mono"
-                          value={formData.accentColor || '#C9A227'}
+                          value={formData.accentColor || '#CDAF7D'}
                           onChange={(e) => handleInputChange('accentColor', e.target.value)}
                         />
                       </div>
@@ -757,12 +757,12 @@ export const EnterpriseOnboardingWizard: React.FC = () => {
                     </span>
                     <div 
                       className="p-3 rounded-lg text-white flex items-center justify-between"
-                      style={{ backgroundColor: formData.primaryColor || '#0B1F3A' }}
+                      style={{ backgroundColor: formData.primaryColor || '#0B1D36' }}
                     >
                       <div className="flex items-center gap-2">
                         <div 
                           className="w-7 h-7 rounded-md flex items-center justify-center font-bold text-xs"
-                          style={{ backgroundColor: formData.accentColor || '#C9A227', color: '#0B1F3A' }}
+                          style={{ backgroundColor: formData.accentColor || '#CDAF7D', color: '#0B1D36' }}
                         >
                           {formData.appName ? formData.appName.slice(0, 2).toUpperCase() : 'CO'}
                         </div>

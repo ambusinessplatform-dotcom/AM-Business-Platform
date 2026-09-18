@@ -204,7 +204,7 @@ export const PlatformProvider: React.FC<{ children: React.ReactNode }> = ({ chil
     root.style.setProperty('--brand-secondary', branding.secondaryColor);
     root.style.setProperty('--brand-accent', branding.accentColor);
     root.style.setProperty('--brand-surface', branding.surfaceColor || '#FFFFFF');
-    root.style.setProperty('--brand-text', branding.textColor || '#0F172A');
+    root.style.setProperty('--brand-text', branding.textColor || '#2B2B2B');
     root.style.setProperty('--brand-font', branding.fontFamily);
     const radiusMap: Record<string, string> = {
       none: '0px',

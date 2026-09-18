@@ -112,7 +112,7 @@ const moduleMetaMap: Partial<Record<ModuleView, ModuleMeta>> = {
     descriptionAr: 'تحسين مسارات الفنيين، قواعد تصعيد اتفاقيات الخدمة، أوامر العمل الميدانية، والتوقيع الرقمي عند الاستلام.',
     featuresEn: ['SLA Breach Warnings', 'Mobile Technician Work Orders', 'On-site Spare Parts Usage', 'Customer E-Signatures'],
     featuresAr: ['تنبيهات تجاوز مستوى الخدمة (SLA)', 'أوامر العمل عبر الجوال', 'استهلاك قطع الغيار الميداني', 'التوقيع الرقمي للعميل'],
-    iconBg: 'from-[#0B1F3A] to-[#153258]'
+    iconBg: 'from-[#0B1D36] to-[#16304F]'
   },
   quality_management: {
     titleEn: 'Quality Control & Assurance (QA/QC)',
@@ -173,7 +173,7 @@ export const ComingSoonView: React.FC<ComingSoonViewProps> = ({ moduleId }) => {
     <div className="p-6 md:p-8 max-w-5xl mx-auto space-y-6">
       
       {/* Banner Card */}
-      <div className="p-8 rounded-2xl bg-[#0B1F3A] text-white shadow-sm relative overflow-hidden border border-[#153258]">
+      <div className="p-8 rounded-2xl bg-[#0B1D36] text-white shadow-sm relative overflow-hidden border border-[#16304F]">
         <div className="relative z-10 space-y-4">
           <div className="flex flex-wrap items-center justify-between gap-3">
             <span className="px-3 py-1 rounded-md bg-brand-gold text-slate-950 font-bold text-[10px] uppercase tracking-wider font-mono">

@@ -4,11 +4,10 @@
  * 
  * Approved AM Identity Specs:
  * - Product identity: AM ERP
- * - Brand family: AM / Ahmed Mounir
- * - Positioning: Financial Accountant | Business Analyst
- * - Motto: "كل قرار ناجح يبدأ برقم صحيح"
- * - Primary color: #0B1F3A
- * - Accent color: AM Gold
+ * - Brand family: AM CONSULTANT
+ * - Positioning: Integrated ERP & business management
+ * - Primary color: #0B1D36
+ * - Accent color: #CDAF7D
  * - Typography: Plus Jakarta Sans / Cairo
  */
 
@@ -20,7 +19,6 @@ import {
   Building, 
   Globe, 
   X, 
-  Sparkles, 
   CheckCircle2, 
   ArrowRight,
   UserCheck
@@ -87,7 +85,7 @@ export const LoginModal: React.FC<LoginModalProps> = ({ isOpen, onClose }) => {
         {/* Top AM Platform Branded Header Banner */}
         <div 
           className="p-6 text-white text-center relative overflow-hidden"
-          style={{ backgroundColor: '#0B1F3A' }}
+          style={{ backgroundColor: '#0B1D36' }}
         >
           <div className="absolute -top-12 -right-12 w-32 h-32 rounded-full opacity-10 bg-[var(--brand-gold)] pointer-events-none" />
           <div className="absolute -bottom-8 -left-8 w-24 h-24 rounded-full opacity-10 bg-white pointer-events-none" />
@@ -116,15 +114,11 @@ export const LoginModal: React.FC<LoginModalProps> = ({ isOpen, onClose }) => {
           {/* Approved AM Monogram Asset */}
           <div className="flex justify-center mb-3 mt-2">
             <div 
-              className="w-16 h-16 rounded-xl flex items-center justify-center font-black text-2xl shadow-lg border-2"
-              style={{ 
-                backgroundColor: '#0B1F3A', 
-                color: 'var(--brand-gold)',
-                borderColor: 'rgba(242, 140, 40, 0.6)'
-              }}
+              className="w-16 h-16 rounded-xl flex items-center justify-center shadow-lg border overflow-hidden"
+              style={{ backgroundColor: '#0B1D36', borderColor: 'rgba(205, 175, 125, 0.6)' }}
               id="am-login-monogram"
             >
-              AM
+              <img src="/am-monogram.svg" alt="AM CONSULTANT" className="h-full w-full object-contain" />
             </div>
           </div>
 
@@ -139,12 +133,9 @@ export const LoginModal: React.FC<LoginModalProps> = ({ isOpen, onClose }) => {
             {isAr ? platformIdentity.positioningAr : platformIdentity.positioning}
           </p>
 
-          {/* Approved Motto Banner */}
+          {/* Product attribution */}
           <div className="mt-3 pt-2.5 border-t border-white/10">
-            <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-md bg-[var(--brand-navy-light)]/80 text-[var(--brand-gold)] text-xs font-bold border border-[var(--brand-gold)]/25 shadow-xs">
-              <Sparkles className="w-3 h-3" />
-              <span>{isAr ? platformIdentity.mottoAr : platformIdentity.motto}</span>
-            </div>
+            <span className="text-[11px] text-slate-300">{isAr ? platformIdentity.mottoAr : platformIdentity.motto}</span>
           </div>
         </div>
 
@@ -229,7 +220,7 @@ export const LoginModal: React.FC<LoginModalProps> = ({ isOpen, onClose }) => {
             type="submit"
             disabled={loading}
             className="am-focus-ring w-full py-3 px-4 rounded-lg text-xs font-bold text-white shadow-md transition flex items-center justify-center gap-2 cursor-pointer mt-2 disabled:opacity-50"
-            style={{ backgroundColor: '#0B1F3A' }}
+            style={{ backgroundColor: '#0B1D36' }}
             id="login-submit-btn"
           >
             <span>{loading ? (isAr ? 'جاري التحقق...' : 'Authenticating...') : (isAr ? 'تسجيل الدخول للمنصة' : 'Authenticate & Enter AM ERP')}</span>

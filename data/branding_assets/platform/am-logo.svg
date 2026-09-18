@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 96" role="img" aria-labelledby="title">
-  <title id="title">AM Business OS</title>
-  <rect width="320" height="96" rx="16" fill="#0B1F3A"/>
-  <path d="M28 68 48 28h14l20 40H68l-4-9H46l-4 9H28Zm23-20h9l-4.5-10L51 48Zm44 20V28h13l12 18 12-18h13v40h-13V48l-12 17-12-17v20H95Z" fill="#C9A227"/>
-  <text x="171" y="58" fill="#fff" font-family="Arial, sans-serif" font-size="25" font-weight="700">Business OS</text>
+  <title id="title">AM CONSULTANT</title>
+  <rect width="320" height="96" rx="16" fill="#0B1D36"/>
+  <path d="M28 68 48 28h14l20 40H68l-4-9H46l-4 9H28Zm23-20h9l-4.5-10L51 48Zm44 20V28h13l12 18 12-18h13v40h-13V48l-12 17-12-17v20H95Z" fill="#CDAF7D"/>
+  <text x="171" y="58" fill="#fff" font-family="Arial, sans-serif" font-size="22" font-weight="700">AM CONSULTANT</text>
 </svg>
