@@ -78,6 +78,13 @@ import {
 
 
 const TOKEN_STORAGE_KEY = 'am_erp_auth_token';
+const PUBLIC_API_ENDPOINTS = new Set([
+  '/auth/login',
+  '/auth/verify-pin',
+  '/branding/platform',
+  '/onboarding/wizard/state',
+  '/onboarding/readiness'
+]);
 
 export class ApiClient {
   private static token: string | null = typeof window !== 'undefined' ? (() => {
@@ -117,6 +124,10 @@ export class ApiClient {
     };
 
     const currentToken = this.getToken();
+    const isPublicEndpoint = Array.from(PUBLIC_API_ENDPOINTS).some(path => endpoint === path || endpoint.startsWith(`${path}/`));
+    if (!currentToken && !isPublicEndpoint) {
+      throw new Error('Authentication required. Please sign in before continuing.');
+    }
     if (currentToken && !headers['Authorization'] && !headers['authorization']) {
       headers['Authorization'] = `Bearer ${currentToken}`;
     }

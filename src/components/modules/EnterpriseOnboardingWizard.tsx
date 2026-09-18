@@ -54,7 +54,7 @@ interface WizardStateResponse {
 }
 
 export const EnterpriseOnboardingWizard: React.FC = () => {
-  const { lang, activeCompany, activeTenant, setActiveCompany, setActiveTenant, setActiveModule, markOnboardingCompleted } = usePlatform();
+  const { lang, activeCompany, activeTenant, currentUser, setActiveCompany, setActiveTenant, setActiveModule, markOnboardingCompleted } = usePlatform();
   const isAr = lang === 'ar';
   const checkLabels: Record<string, string> = {
     TENANT_EXISTS_ACTIVE: 'حساب المنشأة',
@@ -130,6 +130,10 @@ export const EnterpriseOnboardingWizard: React.FC = () => {
   }, [companyId, tenantId, activeCompany, activeTenant, isAr]);
 
   const handleBootstrapSetup = useCallback(async () => {
+    if (!currentUser || !ApiClient.getToken()) {
+      setRequestError(isAr ? 'يرجى تسجيل الدخول أولاً لبدء إعداد المنشأة.' : 'Please sign in before starting business setup.');
+      return;
+    }
     const tenantName = bootstrapForm.tenantName.trim();
     const companyName = bootstrapForm.companyName.trim();
     if (!tenantName || !companyName) {
@@ -162,7 +166,7 @@ export const EnterpriseOnboardingWizard: React.FC = () => {
     } finally {
       setBootstraping(false);
     }
-  }, [bootstrapForm, fetchWizardData, isAr, setActiveCompany, setActiveModule, setActiveTenant]);
+  }, [bootstrapForm, currentUser, fetchWizardData, isAr, setActiveCompany, setActiveModule, setActiveTenant]);
 
   useEffect(() => {
     fetchWizardData();
