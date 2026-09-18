@@ -103,7 +103,7 @@ export const Sidebar: React.FC = () => {
   ].filter(category => category.items.length > 0);
 
   return (
-    <aside className="w-64 shrink-0 border-r border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 px-3 py-4 hidden md:flex flex-col justify-between select-none overflow-y-auto max-h-[calc(100vh-4.25rem)]">
+    <aside className="w-64 shrink-0 border-r border-white/10 bg-[#0B1D36] px-3 py-4 hidden md:flex flex-col justify-between select-none overflow-y-auto max-h-[calc(100vh-4.25rem)]">
       <div className="space-y-5">
         {navCategories.map((cat) => {
           const isCollapsed = collapsedCategories[cat.titleEn];
@@ -112,7 +112,7 @@ export const Sidebar: React.FC = () => {
               <button
                 type="button"
                 onClick={() => toggleCategory(cat.titleEn)}
-                className="w-full px-2 py-1 flex items-center justify-between text-[10px] font-bold uppercase tracking-wider text-slate-400 dark:text-slate-500 hover:text-slate-700 dark:hover:text-slate-300 transition cursor-pointer"
+                className="w-full px-2 py-1 flex items-center justify-between text-[10px] font-bold uppercase tracking-wider text-white/50 hover:text-white/80 transition cursor-pointer"
               >
                 <span>{isAr ? cat.titleAr : cat.titleEn}</span>
                 <ChevronDown className={`w-3 h-3 transition-transform ${isCollapsed ? '-rotate-90' : ''}`} />
@@ -129,11 +129,11 @@ export const Sidebar: React.FC = () => {
                         type="button"
                         onClick={() => setActiveModule(item.id)}
                         style={isActive ? {
-                          backgroundColor: branding?.primaryColor || '#0B1D36',
-                          borderColor: `${branding?.accentColor || '#CDAF7D'}4D`
+                          backgroundColor: 'rgba(255, 255, 255, 0.06)',
+                          borderColor: branding?.accentColor || '#CDAF7D'
                         } : {}}
                         className={`w-full min-h-[38px] flex items-center justify-between rounded-md px-3 py-2 text-xs font-medium transition cursor-pointer ${
-                          isActive ? 'text-white font-bold border' : 'text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800/80'
+                          isActive ? 'text-white font-bold border-s-2' : 'text-white/75 hover:bg-white/10 hover:text-white'
                         }`}
                       >
                         <div className="flex items-center gap-2.5 truncate min-w-0">
@@ -155,17 +155,17 @@ export const Sidebar: React.FC = () => {
         })}
       </div>
 
-      <div className="pt-4 mt-4 border-t border-slate-100 dark:border-slate-800">
-        <div className="rounded-xl bg-slate-50 dark:bg-slate-800/60 p-3 border border-slate-200 dark:border-slate-800 text-xs space-y-1.5">
-          <div className="flex items-center justify-between text-slate-900 dark:text-white font-semibold">
+      <div className="pt-4 mt-4 border-t border-white/10">
+        <div className="rounded-xl bg-white/5 p-3 border border-white/10 text-xs space-y-1.5">
+          <div className="flex items-center justify-between text-white font-semibold">
             <span className="flex items-center gap-1.5">
               <Sparkles className="w-3.5 h-3.5" style={{ color: branding?.accentColor || '#CDAF7D' }} />
               <span className="font-bold truncate max-w-[140px]">{isAr ? (branding?.appNameAr || branding?.appName || 'نظام إيه إم لإدارة الأعمال') : (branding?.appName || 'AM Business OS')}</span>
             </span>
             <span className="text-[10px] font-mono font-bold px-1.5 py-0.5 rounded-md border" style={{ color: branding?.accentColor || '#CDAF7D', backgroundColor: `${branding?.accentColor || '#CDAF7D'}1A`, borderColor: `${branding?.accentColor || '#CDAF7D'}33` }}>v2.8.0</span>
           </div>
-          <p className="text-[10px] text-slate-500 dark:text-slate-400 leading-normal">{branding?.tradingName || (isAr ? 'منصة متكاملة لتخطيط موارد المؤسسات وإدارة الأعمال' : 'Integrated ERP & business management')}</p>
-          {branding?.showPoweredBy !== false && <p className="text-[10px] text-slate-400 dark:text-slate-500">Powered by AM CONSULTANT</p>}
+          <p className="text-[10px] text-white/55 leading-normal">{branding?.tradingName || (isAr ? 'منصة متكاملة لتخطيط موارد المؤسسات وإدارة الأعمال' : 'Integrated ERP & business management')}</p>
+          {branding?.showPoweredBy !== false && <p className="text-[10px] text-white/45">Powered by AM CONSULTANT</p>}
         </div>
       </div>
     </aside>

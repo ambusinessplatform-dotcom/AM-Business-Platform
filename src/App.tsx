@@ -205,7 +205,7 @@ const MainLayout: React.FC = () => {
   };
 
   return (
-    <div className="min-h-screen bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-slate-100 flex flex-col font-sans transition-colors duration-200" dir={dir}>
+    <div className="min-h-screen bg-[#F2F4F7] dark:bg-slate-950 text-slate-900 dark:text-slate-100 flex flex-col font-sans transition-colors duration-200" dir={dir}>
 
       {/* Top Bar */}
       <Navbar />
@@ -217,7 +217,7 @@ const MainLayout: React.FC = () => {
         <Sidebar />
 
         {/* Scrollable Main Application Canvas */}
-        <main className="flex-1 overflow-y-auto bg-slate-50/80 dark:bg-slate-950">
+        <main className="flex-1 overflow-y-auto bg-[#F2F4F7] dark:bg-slate-950">
           {renderActiveModule()}
         </main>
 

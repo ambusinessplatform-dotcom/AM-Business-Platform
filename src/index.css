@@ -92,15 +92,15 @@ color: var(--brand-gold);
 }
 
 .btn-am-accent {
-  background-color: var(--brand-gold);
+  background-color: var(--brand-navy);
   color: #FFFFFF;
-  border: 1px solid var(--brand-gold);
+  border: 1px solid var(--brand-navy);
   font-weight: 600;
   transition: all 150ms ease;
 }
 .btn-am-accent:hover {
-  background-color: var(--brand-gold-muted);
-  border-color: var(--brand-gold-muted);
+  background-color: var(--brand-navy-light);
+  border-color: var(--brand-navy-light);
 }
 
 .badge-am-accent {
@@ -117,7 +117,7 @@ color: var(--brand-gold);
 
 .card-am-surface {
   background-color: #FFFFFF;
-  border: 1px solid #E2E8F0;
+  border: 1px solid var(--border-light);
   border-radius: 0.5rem;
 }
 

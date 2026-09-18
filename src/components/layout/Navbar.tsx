@@ -141,7 +141,7 @@ export const Navbar: React.FC = () => {
                 </span>
               </div>
               <p className="text-[11px] text-slate-500 dark:text-slate-400 truncate max-w-[280px]">
-                {branding?.tradingName || (isAr ? 'إدارة متكاملة للأعمال والعمليات المالية' : 'Integrated business and financial operations')}
+                {branding?.tradingName || (isAr ? 'منصة متكاملة لتخطيط موارد المؤسسات وإدارة الأعمال' : 'Integrated ERP & business management')}
               </p>
             </div>
           </div>
